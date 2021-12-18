@@ -1,0 +1,28 @@
+{
+  "name": "web-profile-desa",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3",
+    "chart.js": "^3.6.2",
+    "next": "12.0.7",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-chartjs-2": "^4.0.0",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-images": "^1.2.0-beta.7",
+    "react-photo-gallery": "^8.0.0",
+    "swiper": "^7.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7"
+  }
+}
