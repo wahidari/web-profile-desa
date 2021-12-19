@@ -1,14 +1,20 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 const title = "Covid-19";
 
 export default function Covid({ covid }) {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
 
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    })
+    
     // const dataGender = populateData(gender);
     const [totalKonfirmasi, totalAktif, totalSembuh, totalMeninggal] = getTotalData(covid);
     // console.log(covid.dataKecamatan);

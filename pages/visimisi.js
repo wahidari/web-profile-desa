@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
@@ -6,11 +7,18 @@ import imgDesa from "../public/desa.png";
 import imgLogo from "../public/logo.png";
 import Image from "next/image";
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 const title = "Visi MIsi";
 
 export default function Sejarah({ posts }) {
+
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
+    
     return (
         <>
 

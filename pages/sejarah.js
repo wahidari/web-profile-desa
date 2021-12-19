@@ -1,16 +1,26 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import BreadcrumbArea from "../components/BreadcrumbArea";
-import imgDesa from "../public/desa.png";
+import imgDesa from "../public/hero.webp";
 import imgLogo from "../public/logo.png";
 import Image from "next/image";
 import BackToTop from "../components/BackToTop";
-import { namaDesa, namaKecamatan, petaLokasi, petaGeospatial } from "../siteIdentity";
 
 const title = "Sejarah";
 
 export default function Sejarah({ posts }) {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+    let [namaKecamatan, setNamaKecamatan] = useState("Tragah");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+        namaKecamatan = localStorage.getItem("namaKecamatan");
+        setNamaKecamatan(namaKecamatan);
+    });
+
     return (
         <>
             <style jsx>
@@ -65,13 +75,13 @@ export default function Sejarah({ posts }) {
                         <div className="card border-0 shadow-sm px-3 py-3 bg-white mb-4">
                             <h3>Peta Desa</h3>
                             <iframe
-                                src={petaLokasi}
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55025.830477406416!2d112.70216338981292!3d-7.023406162641918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd80f60554b1adf%3A0xe181faf130f4decf!2sBangakalan%2C%20Kec.%20Bangkalan%2C%20Kabupaten%20Bangkalan%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1639908491736!5m2!1sid!2sid"
                                 className="rounded mt-3 maps" allowFullScreen=""
                                 loading="lazy"></iframe>
                         </div>
                         <div className="card border-0 shadow-sm px-3 py-3 bg-white mb-4">
                             <h3>Peta Geospatial</h3>
-                            <iframe src={petaGeospatial}
+                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14LgEJiY6STWUfRxSVHHUMmqKFqsWdZyc&ehbc=2E312F"
                                 className="rounded mt-3 maps" allowFullScreen=""
                                 loading="lazy"></iframe>
                         </div>

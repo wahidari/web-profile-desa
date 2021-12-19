@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../../../components/NavBarTop";
 import Breadcrumb from "../../../components/Breadcrumb";
@@ -5,6 +6,13 @@ import PostCard from "../../../components/PostCard";
 import Footer from "../../../components/Footer";
 
 export default function Kategori({ posts }) {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
+
     const categoryName = capitalizeString(posts[0].category);
     
     return (
@@ -18,9 +26,15 @@ export default function Kategori({ posts }) {
             </style>
 
             <Head>
-                <title>{categoryName}</title>
-                <meta name="description" content="Next Bootstrap" />
+                <title>{`Kategori ${categoryName} - ${namaDesa}`}</title>
+                <meta name="description" content={`Website Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_API_URL} />
+                <meta property="og:title" content={`Situs Resmi Desa ${namaDesa}`} />
+                <meta property="og:description" content={`Website Resmi Desa ${namaDesa}. Media komunikasi dan transparansi Pemerintah Desa`} />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/metalogo.jpg`}></meta>
             </Head>
 
             <NavBarTop />

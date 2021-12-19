@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import React, { useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
@@ -27,20 +26,23 @@ import "swiper/css/autoplay";
 // Animate On Scroll
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { webName, namaDesa, namaKecamatan } from "../siteIdentity";
 
 // install Swiper modules
 // SwiperCore.use([Autoplay]);
 SwiperCore.use([Autoplay, Pagination]);
 
-const title = `Selamat Datang di Situs Resmi Desa ${namaDesa}`;
-
 export default function Home({ posts, agendas, videos, photos }) {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+    let [namaKecamatan, setNamaKecamatan] = useState("Tragah");
 
     useEffect(() => {
         AOS.init({
             once: true,
         });
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+        namaKecamatan = localStorage.getItem("namaKecamatan");
+        setNamaKecamatan(namaKecamatan);
     });
 
     // Take only 3 item as featured
@@ -100,7 +102,7 @@ export default function Home({ posts, agendas, videos, photos }) {
             </style>
 
             <Head>
-                <title>{title}</title>
+                <title>Selamat Datang di Situs Resmi Desa {namaDesa}</title>
                 <meta name="description" content={`Website Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
                 {/* <!-- Open Graph / Facebook --> */}

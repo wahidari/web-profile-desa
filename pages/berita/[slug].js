@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +10,13 @@ import BackToTop from "../../components/BackToTop";
 import { FaUser, FaRegCalendarAlt } from "react-icons/fa";
 
 export default function BlogDetail({ post, randomPosts, randomAgendas }) {
+
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
     // console.log(post.author)
     // console.log(randomPosts)
     // Get 3 post
@@ -46,9 +54,15 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
             </style>
 
             <Head>
-                <title>{`${post.title} - Next Bootstrap`}</title>
-                <meta name="description" content="Next Bootstrap" />
+                <title>{`${post.title} - Desa ${namaDesa}`}</title>
+                <meta name="description" content={`Website Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_API_URL} />
+                <meta property="og:title" content={`Situs Resmi Desa ${namaDesa}`} />
+                <meta property="og:description" content={`Website Resmi Desa ${namaDesa}. Media komunikasi dan transparansi Pemerintah Desa`} />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/metalogo.jpg`}></meta>
             </Head>
 
             <NavBarTop />

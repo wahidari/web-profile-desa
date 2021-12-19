@@ -1,14 +1,21 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import AgendaCard from "../components/AgendaCard";
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 const title = "Agenda";
 
 export default function Agenda({agendas}) {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    })
+
     return (
         <>
             <style jsx>

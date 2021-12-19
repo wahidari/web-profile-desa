@@ -1,10 +1,17 @@
+import { useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import Image from "next/image";
 import imgHero from "../public/hero.webp";
 import imgHeroA from "../public/hero1.jpg";
 import imgHeroB from "../public/hero2.jpg";
-import { namaDesa } from "../siteIdentity";
 
 export default function CarouselHome() {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
 
     return (
         <>

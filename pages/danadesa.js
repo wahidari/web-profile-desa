@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
@@ -5,7 +6,6 @@ import Breadcrumb from "../components/Breadcrumb";
 import { Chart as ChartJS, ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from 'chart.js';
 import { Bar, Doughnut, Pie } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
 
@@ -14,6 +14,12 @@ const colors = ["#36b9cc", "#e74a3b", "#fd7e14", "#f6c23e"];
 
 export default function DanaDesa({ danadesa }) {
 
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    })
     
     const [totalPendapatanAnggaran, totalPendapatanRealisasi, totalPendapatanSelisih, totalPendapatanPresentase] = getTotalData(danadesa.pendapatan);
     const [totalBelanjaAnggaran, totalBelanjaRealisasi, totalBelanjaSelisih, totalBelanjaPresentase] = getTotalData(danadesa.belanja);

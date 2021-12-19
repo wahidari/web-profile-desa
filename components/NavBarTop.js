@@ -5,10 +5,14 @@ import ActiveLink from './ActiveLink'
 import React, { useState, useEffect } from "react";
 import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
-import { namaDesa, webName } from "../siteIdentity";
-
 export default function NavBarTop() {
-    // console.log("lala "+process.env.NAMA_DESA);
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
+
     const [isFixedNavbar, setFixedNavbar] = useState("false");
     
     useEffect(() => {

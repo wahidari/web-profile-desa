@@ -4,15 +4,20 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import React, { useState, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 const title = "Foto";
 
 export default function Foto({ photos }) {
     // console.log(photos)
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
 
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    })
+    
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 

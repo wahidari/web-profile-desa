@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
@@ -5,13 +6,19 @@ import Breadcrumb from "../components/Breadcrumb";
 import { Chart as ChartJS, ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
-import { namaDesa } from "../siteIdentity";
 
 ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
 
 const title = "Demografis Wilayah";
 
 export default function Wilayah({ area }) {
+
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+    });
 
     const dataArea = populateData(area);
     const [totalRT, totalKK, totalMale, totalFemale, totalCount] = getTotalData(area);

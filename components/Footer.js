@@ -1,11 +1,20 @@
-import Link from "next/link";
+import { useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import Image from "next/image";
 import imgLogo from "../public/logo.png";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { namaDesa, namaKecamatan } from "../siteIdentity";
 
 export default function Footer() {
+    let [namaDesa, setNamaDesa] = useState("Alang Alang");
+    let [namaKecamatan, setNamaKecamatan] = useState("Tragah");
 
+    useEffect(() => {
+        namaDesa = localStorage.getItem("namaDesa");
+        setNamaDesa(namaDesa);
+        namaKecamatan = localStorage.getItem("namaKecamatan");
+        setNamaKecamatan(namaKecamatan);
+    });
+    
     return (
         <>
             <style jsx>{`
