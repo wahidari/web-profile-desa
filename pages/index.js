@@ -101,7 +101,7 @@ export default function Home({ posts, agendas, videos, photos }) {
 
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Website Desa" />
+                <meta name="description" content={`Website Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="website" />

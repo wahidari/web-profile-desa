@@ -5,6 +5,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { Chart as ChartJS, ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from 'chart.js';
 import { Bar, Doughnut, Pie } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
+import { namaDesa } from "../siteIdentity";
 
 ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
 
@@ -43,8 +44,14 @@ export default function DanaDesa({ danadesa }) {
 
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Next Bootstrap" />
+                <meta name="description" content={`Website Desa ${namaDesa}`} />
                 <link rel="icon" href="/favicon.ico" />
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_API_URL} />
+                <meta property="og:title" content={`Situs Resmi Desa ${namaDesa}`} />
+                <meta property="og:description" content={`Website Resmi Desa ${namaDesa}. Media komunikasi dan transparansi Pemerintah Desa`} />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/metalogo.jpg`}></meta>
             </Head>
 
             <NavBarTop />
