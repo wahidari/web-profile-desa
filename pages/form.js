@@ -5,7 +5,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
 import { useRouter } from 'next/router'
 
-const title = "Form";
+const title = "Form Ganti Desa";
 
 export default function Form({identity}) {
     const router = useRouter();
@@ -28,8 +28,14 @@ export default function Form({identity}) {
 
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Next Bootstrap" />
+                <meta name="description" content="Website Desa" />
                 <link rel="icon" href="/favicon.ico" />
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_API_URL} />
+                <meta property="og:title" content={`Situs Resmi Desa`} />
+                <meta property="og:description" content={`Website Resmi Desa. Media komunikasi dan transparansi Pemerintah Desa`} />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/metalogo.jpg`}></meta>
             </Head>
 
             <NavBarTop />
