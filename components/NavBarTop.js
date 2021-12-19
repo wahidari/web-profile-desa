@@ -46,7 +46,7 @@ export default function NavBarTop() {
                         transition: all 1s ease;
                     }
                     .navbar {
-                        padding: 0px;
+                        padding: 2.5px 0px;
                     }
                     .fw-600 {
                         font-weight: 600;

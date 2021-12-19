@@ -33,7 +33,7 @@ import { webName, namaDesa, namaKecamatan } from "../siteIdentity";
 // SwiperCore.use([Autoplay]);
 SwiperCore.use([Autoplay, Pagination]);
 
-const title = "Selamat Datang di Situs Resmi Desa";
+const title = `Selamat Datang di Situs Resmi Desa ${namaDesa}`;
 
 export default function Home({ posts, agendas, videos, photos }) {
 
@@ -101,14 +101,14 @@ export default function Home({ posts, agendas, videos, photos }) {
 
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Next Bootstrap" />
+                <meta name="description" content="Website Desa" />
                 <link rel="icon" href="/favicon.ico" />
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://next-bootstrapp.vercel.app/" />
-                <meta property="og:title" content="Next Bootstrap" />
-                <meta property="og:description" content="Next Bootstrap" />
-                <meta property="og:image" content="https://next-bootstrapp.vercel.app/metalogo.png"></meta>
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_API_URL} />
+                <meta property="og:title" content={`Situs Resmi Desa ${namaDesa}`} />
+                <meta property="og:description" content={`Website Resmi Desa ${namaDesa}. Media komunikasi dan transparansi Pemerintah Desa`} />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_API_URL}/metalogo.jpg`}></meta>
             </Head>
 
             <NavBarTop />

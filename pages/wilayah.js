@@ -106,7 +106,7 @@ export default function Wilayah({ area }) {
 
 // This gets called on every request to this page
 export async function getServerSideProps() {
-    const getDataArea = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/area`);
+    const getDataArea = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/wilayah`);
     const area = await getDataArea.json();
     return {
         props: { area }, // will be passed to the page component as props

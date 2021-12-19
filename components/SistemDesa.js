@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaBriefcase, FaGraduationCap, FaMoon, FaPeopleArrows } from "react-icons/fa";
 
 export default function SistemDesa() {
 
@@ -53,15 +52,15 @@ export default function SistemDesa() {
             `}</style>
 
             <section>
-                <div className="container py-5 my-5">
+                <div className="container-fluid py-5 my-5">
                     <h2 className="text-center">Aplikasi Desa</h2>
                     <p className="text-center text-dark-secondary text-subtitle">Berikut Adalah Beberapa Aplikasi di Desa Kami</p>
                     <div className="container mt-5">
                         <div className="row gx-3 gy-3">
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link" data-aos="zoom-in" data-aos-duration="750">
+                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="500">
                                     <Link href="/bumdes">
-                                        <a className="stretched-link"></a>
+                                        <a className="stretched-link" aria-label="Bumdes"></a>
                                     </Link>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
@@ -80,8 +79,8 @@ export default function SistemDesa() {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link" data-aos="zoom-in" data-aos-duration="1500">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link"></a>
+                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1000">
+                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link" aria-label="Pengaduan"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
                                             <div className="icon-shape icon-sm icon-shape-danger rounded me-3"><svg
@@ -99,10 +98,10 @@ export default function SistemDesa() {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link" data-aos="zoom-in" data-aos-duration="2250">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link"></a>
+                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1500">
+                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link" aria-label="Surat"></a>
                                     <div className="card-body">
-                                        <div className="d-flex align-items-center">
+                                        <div className="d-flex align-items-center align-center">
                                             <div className="icon-shape icon-sm icon-shape-success rounded me-3">
                                                 <svg className="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -121,8 +120,8 @@ export default function SistemDesa() {
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link" data-aos="zoom-in" data-aos-duration="3000">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link"></a>
+                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="2000">
+                                    <a href="https://sistem-desa.vercel.app/index.html" className="stretched-link" aria-label="Kesehatan"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
                                             <div className="icon-shape icon-sm icon-shape-warning rounded me-3">
@@ -134,7 +133,7 @@ export default function SistemDesa() {
                                                 </svg>
                                             </div>
                                             <div className="d-block">
-                                                <h4 className="mb-0">E-HEALTHY</h4>
+                                                <h4 className="mb-0">E-HEALTH</h4>
                                                 <label className="mb-0 text-dark-secondary">Info Kesehatan</label>
                                             </div>
                                         </div>

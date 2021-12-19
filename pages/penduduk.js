@@ -7,11 +7,18 @@ import { Bar, Doughnut, Pie } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
 
 ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
+const colors = ["#36b9cc", "#1cc88a", "#6f42c1", "#e74a3b", "#fd7e14", "#f6c23e"];
+const options = {
+    plugins: {
+        legend: {
+            display: false
+        }
+    }
+};
 
 const title = "Demografis Penduduk";
-const colors = ["#36b9cc", "#1cc88a", "#6f42c1", "#e74a3b", "#fd7e14", "#f6c23e"];
 
-export default function Penduduk({ gender, education, religion }) {
+export default function Penduduk({ gender, education, religion, pekerjaan, status, usia }) {
 
     const dataGender = populateData(gender);
     const totalDataGender = getTotalData(gender);
@@ -21,6 +28,15 @@ export default function Penduduk({ gender, education, religion }) {
 
     const dataReligion = populateData(religion);
     const totalDataReligion = getTotalData(religion);
+
+    const dataPekerjaan = populateData(pekerjaan);
+    const totalDataPekerjaan = getTotalData(pekerjaan);
+
+    const dataStatus = populateData(status);
+    const totalDataStatus = getTotalData(status);
+
+    const dataUsia = populateData(usia);
+    const totalDataUsia = getTotalData(usia);
     
     return (
         <>
@@ -175,6 +191,133 @@ export default function Penduduk({ gender, education, religion }) {
                         </div>
                     </div>
 
+                    <div className="card rounded shadow-card border-0 my-5" id="pekerjaan">
+                        <div className="card-header py-3">
+                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Pekerjaan</h5>
+                        </div>
+                        <div className="card-body">
+                            <h5>Grafik</h5>
+                            <div className="col-md-8 col-lg-5 mx-auto">
+                                <Pie
+                                    data={dataPekerjaan}
+                                    width={400}
+                                    height={250}
+                                />
+                            </div>
+                            <h5 className="mt-5">Tabel Data</h5>
+                            <div className="table-responsive mt-3">
+                                <table className="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th className="fw-600">No</th>
+                                            <th className="fw-600">Kelompok</th>
+                                            <th className="fw-600">Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {pekerjaan.map(item =>
+                                            <tr key={item.id}>
+                                                <td>{item.id}</td>
+                                                <td>{item.name}</td>
+                                                <td>{item.total}</td>
+                                            </tr>
+                                        )}
+
+                                        <tr>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td className="fw-600">{totalDataPekerjaan}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card rounded shadow-card border-0 my-5" id="usia">
+                        <div className="card-header py-3">
+                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Usia</h5>
+                        </div>
+                        <div className="card-body">
+                            <h5>Grafik</h5>
+                            <div className="col-md-8 col-lg-6 mx-auto">
+                                <Bar
+                                    options={options}
+                                    data={dataUsia}
+                                    width={400}
+                                    height={250}
+                                />
+                            </div>
+                            <h5 className="mt-5">Tabel Data</h5>
+                            <div className="table-responsive mt-3">
+                                <table className="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th className="fw-600">No</th>
+                                            <th className="fw-600">Kelompok</th>
+                                            <th className="fw-600">Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {usia.map(item =>
+                                            <tr key={item.id}>
+                                                <td>{item.id}</td>
+                                                <td>{item.name}</td>
+                                                <td>{item.total}</td>
+                                            </tr>
+                                        )}
+
+                                        <tr>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td className="fw-600">{totalDataUsia}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card rounded shadow-card border-0 my-5" id="status">
+                        <div className="card-header py-3">
+                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Status</h5>
+                        </div>
+                        <div className="card-body">
+                            <h5>Grafik</h5>
+                            <div className="col-md-8 col-lg-5 mx-auto">
+                                <Pie
+                                    data={dataStatus}
+                                    width={400}
+                                    height={250}
+                                />
+                            </div>
+                            <h5 className="mt-5">Tabel Data</h5>
+                            <div className="table-responsive mt-3">
+                                <table className="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th className="fw-600">No</th>
+                                            <th className="fw-600">Kelompok</th>
+                                            <th className="fw-600">Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {status.map(item =>
+                                            <tr key={item.id}>
+                                                <td>{item.id}</td>
+                                                <td>{item.name}</td>
+                                                <td>{item.total}</td>
+                                            </tr>
+                                        )}
+
+                                        <tr>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td className="fw-600">{totalDataStatus}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </main>
 
@@ -193,8 +336,14 @@ export async function getServerSideProps() {
     const education = await getDataEducation.json();
     const getDataReligion = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/religion`);
     const religion = await getDataReligion.json();
+    const getDataPekerjaan = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/pekerjaan`);
+    const pekerjaan = await getDataPekerjaan.json();
+    const getDataStatus = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/status`);
+    const status = await getDataStatus.json();
+    const getDataUsia = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/usia`);
+    const usia = await getDataUsia.json();
     return {
-        props: { gender, education, religion }, // will be passed to the page component as props
+        props: { gender, education, religion, pekerjaan, status, usia }, // will be passed to the page component as props
     };
 };
 
@@ -213,7 +362,7 @@ function populateData(param) {
         datasets: [{
             data: totals,
             backgroundColor: colors
-        }]
+        }],
     };
     return (data);
 }

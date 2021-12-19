@@ -11,6 +11,7 @@ export default function Footer() {
             <style jsx>{`
                 footer a:hover {
                     color: #0d6efd;
+                    transition: all 1s ease;
                 }
                 .text-white-80 {
                     color: rgb(206, 205, 205);
@@ -37,7 +38,7 @@ export default function Footer() {
                             <ul className="list-unstyled text-white-80 text-decoration-none text-15">
                                 <li className="my-2">
                                     <div className="d-flex">
-                                        <i className="me-2 mt-1"><FaMapMarkerAlt/></i>
+                                        <i className="me-2"><FaMapMarkerAlt/></i>
                                         Jl. Raya {namaDesa} Kec. {namaKecamatan}, Bangkalan, 69116
                                     </div>
                                 </li>
