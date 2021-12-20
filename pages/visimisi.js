@@ -3,8 +3,7 @@ import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import BreadcrumbArea from "../components/BreadcrumbArea";
-import imgDesa from "../public/desa.png";
-import imgLogo from "../public/logo.png";
+import imgDesa from "../public/hero.webp";
 import Image from "next/image";
 import BackToTop from "../components/BackToTop";
 
@@ -44,8 +43,11 @@ export default function Sejarah({ posts }) {
                     <div className="col-lg-10 mx-auto">
                         <div className="card border-0 shadow-sm px-3 py-3 bg-white mb-4">
                             <h3>Visi Dan Misi</h3>
-                            <hr/>
-                            <h5>Visi</h5>
+                            <Image
+                                src={imgDesa}
+                                alt="Desa"
+                                className="img-fluid rounded my-3" />
+                            <h5 className="mt-4">Visi</h5>
                             <p className ="text-dark-secondary">“ Terwujudnya Desa {namaDesa} sebagai Desa yang Mandiri melalui Pengembangan Ekonomi Berbasis Potensi Sumber Daya Alam untuk mencapai masyarakat makmur dan agamis ”</p>
                             <h5>Misi</h5>
                             <p className ="text-dark-secondary mb-2">1. Mewujudkan dan mengembangkan kegiatan keagamaan untuk menambah keimanan dan ketaqwaan kepada Tuhan Yang Maha Esa.</p>

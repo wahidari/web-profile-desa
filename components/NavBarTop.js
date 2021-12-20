@@ -158,6 +158,16 @@ export default function NavBarTop() {
                                             <a className="nav-link ms-3 ms-md-2">Agenda</a>
                                         </ActiveLink>
                                     </li>
+                                    <li>
+                                        <ActiveLink activeClassName="active" href="/produkhukum">
+                                            <a className="nav-link ms-3 ms-md-2">Produk Hukum</a>
+                                        </ActiveLink>
+                                    </li>
+                                    <li>
+                                        <ActiveLink activeClassName="active" href="/informasipublik">
+                                            <a className="nav-link ms-3 ms-md-2">Informasi Publik</a>
+                                        </ActiveLink>
+                                    </li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
@@ -165,6 +175,11 @@ export default function NavBarTop() {
                                     Demografis
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="chartDropdown">
+                                    <li>
+                                        <ActiveLink activeClassName="active" href="/administrasi">
+                                            <a className="nav-link ms-3 ms-md-2">Administrasi</a>
+                                        </ActiveLink>
+                                    </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/penduduk">
                                             <a className="nav-link ms-3 ms-md-2">Penduduk</a>
@@ -179,34 +194,46 @@ export default function NavBarTop() {
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
                                 <a className="nav-link dropdown-toggle" href="#" id="galeriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Galeri
+                                    Media
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="galeriDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/foto">
-                                            <a className="nav-link ms-3 ms-md-2">Foto</a>
+                                            <a className="nav-link ms-3 ms-md-2">Galeri Foto</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/video">
-                                            <a className="nav-link ms-3 ms-md-2">Video</a>
+                                            <a className="nav-link ms-3 ms-md-2">Galeri Video</a>
+                                        </ActiveLink>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="nav-item dropdown ms-lg-1">
+                                <a className="nav-link dropdown-toggle" href="#" id="publikasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Publikasi Data
+                                </a>
+                                <ul className="dropdown-menu" aria-labelledby="publikasiDropdown">
+                                    <li>
+                                        <ActiveLink activeClassName="active" href="#">
+                                            <a className="nav-link ms-3 ms-md-2">Pembangunan Desa</a>
+                                        </ActiveLink>
+                                    </li>
+                                    <li>
+                                        <ActiveLink activeClassName="active" href="/danadesa">
+                                            <a className="nav-link ms-3 ms-md-2">Dana Desa</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item ms-lg-1">
-                                <ActiveLink activeClassName="active" href="/bumdes">
-                                    <a className="nav-link">Bumdes</a>
+                                <ActiveLink activeClassName="active" href="/lapak">
+                                    <a className="nav-link">Lapak</a>
                                 </ActiveLink>
                             </li>
                             <li className="nav-item ms-lg-1">
                                 <ActiveLink activeClassName="active" href="/covid">
                                     <a className="nav-link">Covid-19</a>
-                                </ActiveLink>
-                            </li>
-                            <li className="nav-item ms-lg-1">
-                                <ActiveLink activeClassName="active" href="/danadesa">
-                                    <a className="nav-link">Dana Desa</a>
                                 </ActiveLink>
                             </li>
                         </ul>

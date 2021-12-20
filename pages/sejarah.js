@@ -57,7 +57,7 @@ export default function Sejarah({ posts }) {
                             src={imgDesa} 
                             alt="Desa" 
                             className="img-fluid rounded my-3"/>
-                            <h5 className="mt-3">Uraian Singkat Profil Desa</h5>
+                            <h5 className="mt-4">Uraian Singkat Profil Desa</h5>
                             <p className="text-dark-secondary">Desa {namaDesa} merupakan Desa yang terletak di dataran rendah
                                 yang sebelah selatannya terdapat Selat Madura, tinggi dari permukaan Pantai yaitu 2 M.
                                 Selain

@@ -6,9 +6,9 @@ import Breadcrumb from "../components/Breadcrumb";
 import ProductCard from "../components/ProductCard";
 import BackToTop from "../components/BackToTop";
 
-const title = "Bumdes";
+const title = "Lapak Desa";
 
-export default function Bumdes({products}) {
+export default function Lapak({products}) {
     let [namaDesa, setNamaDesa] = useState("Alang Alang");
 
     useEffect(() => {
@@ -39,7 +39,7 @@ export default function Bumdes({products}) {
 
             <main>
                 <div className="bg-light">
-                    <Breadcrumb pageName="Bumdes" currentPage="Bumdes" />
+                    <Breadcrumb pageName="Lapak" currentPage="Lapak" />
                 </div>
 
                 <div className="container my-5">

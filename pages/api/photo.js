@@ -35,7 +35,25 @@ const photos = [
         title: "Image 6",
         width: 4,
         height: 3
-    }
+    },
+    {
+        src: "https://images.unsplash.com/photo-1639938793998-a1cf1a253cf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=80",
+        title: "Image 7",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://images.unsplash.com/photo-1639936014191-130ed8733401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=80",
+        title: "Image 8",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://images.unsplash.com/photo-1639930451315-be32be3b91a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=80",
+        title: "Image 9",
+        width: 4,
+        height: 3
+    },
 ];
 
 export default function allHandler(req, res) {

@@ -101,8 +101,8 @@ export default function StatisticLink() {
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <Link href="/penduduk#jenis-kelamin">
-                                        <a className="stretched-link">Jenis Kelamin</a>
+                                    <Link href="/penduduk#usia">
+                                        <a className="stretched-link">Usia</a>
                                     </Link>
                                 </h5>
                             </div>

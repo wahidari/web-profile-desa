@@ -46,10 +46,10 @@ export default function Home({ posts, agendas, videos, photos }) {
     });
 
     // Take only 3 item as featured
-    const featuredPost = posts.slice(0, 3);
-    const featuredAgenda = agendas.slice(0, 2);
+    const featuredPost = posts.slice(0, 4);
+    const featuredAgenda = agendas.slice(0, 4);
     const featuredVideo = videos.slice(0, 2);
-    const featuredPhotos = photos.slice(0, 3);
+    const featuredPhotos = photos.slice(0, 6);
 
     // For Image Lightbox & Carousel 
     const [currentImage, setCurrentImage] = useState(0);
@@ -124,7 +124,7 @@ export default function Home({ posts, agendas, videos, photos }) {
                         <div className="row align-items-center justify-content-between">
                             <div className="col-md-5" data-aos="fade-up" data-aos-duration="750">
                                 <div className="d-flex justify-content-center">
-                                    <Image alt="Logo" src={imageLogo} height={200} width={200} />
+                                    <Image alt="Logo" src={imageLogo} height={250} width={250} />
                                 </div>
                             </div>
                             <div className="col-md-7" data-aos="fade-up" data-aos-duration="1500">
@@ -133,8 +133,11 @@ export default function Home({ posts, agendas, videos, photos }) {
                                     <p className="text-dark-secondary" id="scroll-to-statistic">
                                         Website Resmi Desa {namaDesa}, Kec. {namaKecamatan}, Kabupaten Bangkalan, Jawa Timur. Media komunikasi dan transparansi Pemerintah Desa untuk seluruh masyarakat di Indonesia
                                     </p>
-                                    <a href="#scroll-to" className="btn btn-primary shadow rounded px-3 scroll-to">Selengkapnya <i className="ms-2"><FaArrowDown /></i>
-                                    </a>
+                                    <Link href="/sejarah">
+                                        <a className="btn btn-primary shadow rounded px-3 scroll-to">Profil Desa 
+                                            <i className="ms-2"><FaArrowRight/></i>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -142,92 +145,6 @@ export default function Home({ posts, agendas, videos, photos }) {
                 </section>
 
                 <StatisticLink />
-
-                <div className="container my-5 py-4" id="scroll-to">
-                    <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Berita</h3>
-                        <Link href="/berita">
-                            <a className="text-decoration-none">Semua Berita
-                                <i className="ms-2"><FaArrowRight /></i>
-                            </a>
-                        </Link>
-                    </div>
-                    <div className="row g-4">
-                        <Swiper className="swiper-custom"
-                            spaceBetween={24}
-                            slidesPerView={3}
-                            breakpoints={{
-                                "320": {
-                                    "slidesPerView": 1,
-                                    "spaceBetween": 24
-                                },
-                                "480": {
-                                    "slidesPerView": 1,
-                                    "spaceBetween": 24
-                                },
-                                "640": {
-                                    "slidesPerView": 2,
-                                    "spaceBetween": 24
-                                },
-                                "768": {
-                                    "slidesPerView": 2,
-                                    "spaceBetween": 24
-                                },
-                                "1024": {
-                                    "slidesPerView": 3,
-                                    "spaceBetween": 24
-                                }
-                            }}
-                            autoplay={{
-                                "delay": 4000,
-                                "disableOnInteraction": false
-                            }}
-                            pagination={{
-                                "clickable": true
-                            }}
-                            // navigation={false}
-                            loop={true}
-                        >
-                            {posts.map(post =>
-                                <SwiperSlide key={post.id}>
-                                    <PostCard
-                                        id={post.id}
-                                        image={post.image}
-                                        title={post.title}
-                                        slug={post.slug}
-                                        author={post.author}
-                                        date={post.date}
-                                        excerpt={post.excerpt} />
-                                </SwiperSlide>
-                            )}
-                        </Swiper>
-                    </div>
-                </div>
-
-                {/* <div className="container my-5 py-4">
-                    <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Blog</h3>
-                        <Link href="/blog">
-                            <a className="text-decoration-none">All Blog
-                                <i className="ms-2"><FaArrowRight /></i>
-                            </a>
-                        </Link>
-                    </div>
-                    <div className="row g-4">
-                        {featuredPost.map(post =>
-                            <div className="col-sm-6 col-md-6 col-lg-4" key={post.id}>
-                                <PostCard
-                                    id={post.id}
-                                    image={post.image}
-                                    title={post.title}
-                                    slug={post.slug}
-                                    author={post.author}
-                                    date={post.date}
-                                    excerpt={post.excerpt} />
-                            </div>
-                        )}
-                    </div>
-                </div> */}
 
                 <div className="container my-5 py-4">
                     <div className="d-flex align-items-center justify-content-between mb-4">
@@ -274,7 +191,7 @@ export default function Home({ posts, agendas, videos, photos }) {
                             // navigation={false}
                             loop={true}
                         >
-                            {agendas.map(agenda =>
+                            {featuredAgenda.map(agenda =>
                                 <SwiperSlide key={agenda.id}>
                                     <AgendaCard
                                         id={agenda.id}
@@ -315,23 +232,91 @@ export default function Home({ posts, agendas, videos, photos }) {
                     </div>
                 </div> */}
 
-                <div className="container my-5 py-4">
+                <div className="container my-5 py-4" id="scroll-to">
                     <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Video</h3>
-                        <Link href="/video">
-                            <a className="text-decoration-none">Semua Video
+                        <h3 className="mb-0">Berita</h3>
+                        <Link href="/berita">
+                            <a className="text-decoration-none">Semua Berita
                                 <i className="ms-2"><FaArrowRight /></i>
                             </a>
                         </Link>
                     </div>
                     <div className="row g-4">
-                        {featuredVideo.map(video =>
-                            <div className="col-md-6" key={video.title}>
-                                <VideoCard title={video.title} src={video.src} />
+                        <Swiper className="swiper-custom"
+                            spaceBetween={24}
+                            slidesPerView={3}
+                            breakpoints={{
+                                "320": {
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 24
+                                },
+                                "480": {
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 24
+                                },
+                                "640": {
+                                    "slidesPerView": 2,
+                                    "spaceBetween": 24
+                                },
+                                "768": {
+                                    "slidesPerView": 2,
+                                    "spaceBetween": 24
+                                },
+                                "1024": {
+                                    "slidesPerView": 3,
+                                    "spaceBetween": 24
+                                }
+                            }}
+                            autoplay={{
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                            }}
+                            pagination={{
+                                "clickable": true
+                            }}
+                            // navigation={false}
+                            loop={true}
+                        >
+                            {featuredPost.map(post =>
+                                <SwiperSlide key={post.id}>
+                                    <PostCard
+                                        id={post.id}
+                                        image={post.image}
+                                        title={post.title}
+                                        slug={post.slug}
+                                        author={post.author}
+                                        date={post.date}
+                                        excerpt={post.excerpt} />
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
+                    </div>
+                </div>
+
+                {/* <div className="container my-5 py-4">
+                    <div className="d-flex align-items-center justify-content-between mb-4">
+                        <h3 className="mb-0">Blog</h3>
+                        <Link href="/blog">
+                            <a className="text-decoration-none">All Blog
+                                <i className="ms-2"><FaArrowRight /></i>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className="row g-4">
+                        {featuredPost.map(post =>
+                            <div className="col-sm-6 col-md-6 col-lg-4" key={post.id}>
+                                <PostCard
+                                    id={post.id}
+                                    image={post.image}
+                                    title={post.title}
+                                    slug={post.slug}
+                                    author={post.author}
+                                    date={post.date}
+                                    excerpt={post.excerpt} />
                             </div>
                         )}
                     </div>
-                </div>
+                </div> */}
 
                 <div className="container my-5 py-4">
                     <div className="d-flex align-items-center justify-content-between mb-4">
@@ -360,6 +345,24 @@ export default function Home({ posts, agendas, videos, photos }) {
                                 </Modal>
                             ) : null}
                         </ModalGateway>
+                    </div>
+                </div>
+
+                <div className="container my-5 py-4">
+                    <div className="d-flex align-items-center justify-content-between mb-4">
+                        <h3 className="mb-0">Video</h3>
+                        <Link href="/video">
+                            <a className="text-decoration-none">Semua Video
+                                <i className="ms-2"><FaArrowRight /></i>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className="row g-4">
+                        {featuredVideo.map(video =>
+                            <div className="col-md-6" key={video.title}>
+                                <VideoCard title={video.title} src={video.src} />
+                            </div>
+                        )}
                     </div>
                 </div>
 

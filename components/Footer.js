@@ -98,9 +98,10 @@ export default function Footer() {
                     </div>
                     <div className="row pt-3 pb-md-0 mt-4 border-top-dark">
                         <div className="col-md-8  text-center text-md-start text-15">
-                            <p className="text-white-80">© Hak Cipta Dilindungi 2021 - Situs Resmi Desa 
-                            <a href="#" className="text-decoration-none text-white-80"> {namaDesa}</a>. 
-                            All rights reserved</p>
+                            <p className="text-white-80">Copyright © 
+                                <a href="#" className="text-decoration-none text-white-80"> Desa {namaDesa}</a>. 
+                                All rights reserved
+                            </p>
                         </div>
                         <div className="col-md-4 mb-3 text-center text-md-end ">
                             <a href="https://web.facebook.com/" className="mx-2 text-white-80" aria-label="Facebook" rel="noreferrer" target="_blank">
