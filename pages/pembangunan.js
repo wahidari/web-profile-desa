@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
 
-const title = "Informasi Publik";
+const title = "Pembangunan Desa";
 
-export default function InformasiPublik({ covid }) {
+export default function Pembangunan({ covid }) {
     let [namaDesa, setNamaDesa] = useState("Alang Alang");
 
     useEffect(() => {
@@ -44,38 +44,58 @@ export default function InformasiPublik({ covid }) {
             <NavBarTop />
 
             <main>
-                {/* <div className="bg-light">
-                    <Breadcrumb pageName="Informasi" currentPage="Informasi" />
-                </div> */}
+                <div className="bg-light">
+                    <Breadcrumb pageName="Pembangunan" currentPage="Pembangunan" />
+                </div>
 
                 <div className="container my-5">
                     <div className="card border-0 shadow-custom px-3 pt-3">
-                        <h4>Informasi Publik</h4>
-                        <div className="table-responsive mt-3">
-                            <table className="table table-borderless table-hover">
+                        <div className="table-responsive">
+                            <table className="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Informasi</th>
-                                        <th>Jenis</th>
-                                        <th>Tahun</th>
-                                        <th>Aksi</th>
+                                        <th>Program</th>
+                                        <th>Lokasi</th>
+                                        <th>Anggaran</th>
+                                        <th>Sumber Dana</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Formulir Pengajuan Keberatan Informasi</td>
-                                        <td>Informasi Umum</td>
-                                        <td>2017</td>
-                                        <td><a href="#" className="text-decoration-none">Download</a></td>
+                                        <td>1.</td>
+                                        <td>Pembangunan Jembatan Penghubung Persawahan</td>
+                                        <td>RT 01</td>
+                                        <td>Rp. 119.655,-</td>
+                                        <td>Dana Desa</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Formulir Pengajuan Beasiswa Masyarakata Desa</td>
-                                        <td>Informasi Berkala</td>
-                                        <td>2017</td>
-                                        <td><a href="#" className="text-decoration-none">Download</a></td>
+                                        <td>Pembangunan MCK dan Tempat Wudhu Masjid</td>
+                                        <td>RT 02</td>
+                                        <td>Rp. 219.655,-</td>
+                                        <td>Dana Desa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Peningkatan Jalan Usaha Tani</td>
+                                        <td>RT 03</td>
+                                        <td>Rp. 319.655,-</td>
+                                        <td>Dana Desa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Pembangunan Gorong-Gorong</td>
+                                        <td>RT 04</td>
+                                        <td>Rp. 419.655,-</td>
+                                        <td>Dana Desa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Pembangunan Jembatan</td>
+                                        <td>RT 05</td>
+                                        <td>Rp. 519.655,-</td>
+                                        <td>Dana Desa</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -43,7 +43,7 @@ export default function NavBarTop() {
                         font-size: 15px !important;
                     }
                     .dropdown-menu {
-                        min-width: 12rem; 
+                        min-width: 13rem; 
                     }
                     .top-of-navbar a:hover {
                         color: #0d6efd;
@@ -215,7 +215,7 @@ export default function NavBarTop() {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="publikasiDropdown">
                                     <li>
-                                        <ActiveLink activeClassName="active" href="#">
+                                        <ActiveLink activeClassName="active" href="/pembangunan">
                                             <a className="nav-link ms-3 ms-md-2">Pembangunan Desa</a>
                                         </ActiveLink>
                                     </li>
