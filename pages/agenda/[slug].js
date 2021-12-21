@@ -84,14 +84,10 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                 />
                                 <div className="card-body">
                                     <h3 className="card-title">{agenda.title}</h3>
-                                    <div className="d-block d-sm-flex blog-meta py-2">
+                                    <div className="d-block d-sm-flex blog-meta pt-2">
                                         <div className="d-flex mb-2">
                                             <FaRegCalendarAlt />
-                                            <small className="text-muted ms-2">{agenda.time} - {agenda.date}</small>
-                                        </div>
-                                        <div className="d-flex ms-0 ms-sm-3">
-                                            <FaMapMarkerAlt />
-                                            <small className="text-muted ms-2">{agenda.location}</small>
+                                            <small className="text-muted ms-2">{agenda.date}</small>
                                         </div>
                                     </div>
                                     <p className="card-text mt-2">{agenda.body}</p>

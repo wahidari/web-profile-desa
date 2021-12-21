@@ -46,14 +46,9 @@ export default function AgendaCard({ id, slug, image, title, location, date, tim
                             <Link href={`/agenda/${slug}`}>
                                 <a className="stretched-link"><h5 className="card-title mb-3">{title}</h5></a>
                             </Link>
-                            <hr />
                             <div className="d-flex mb-3">
                                 <FaRegCalendarAlt />
-                                <small className="text-muted ms-2">{time} - {date}</small>
-                            </div>
-                            <div className="d-flex">
-                                <FaMapMarkerAlt />
-                                <small className="text-muted ms-2">{location}</small>
+                                <small className="text-muted ms-2">{date}</small>
                             </div>
                         </div>
                     </div>
