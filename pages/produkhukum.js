@@ -44,9 +44,9 @@ export default function ProdukHukum({ covid }) {
             <NavBarTop />
 
             <main>
-                {/* <div className="bg-light">
-					<Breadcrumb pageName="Hukum" currentPage="Hukum" />
-				</div> */}
+                <div className="bg-light">
+					<Breadcrumb pageName="Hukum" currentPage="Produk Hukum" />
+				</div>
 
                 <div className="container my-5">
                     <div className="card border-0 shadow-custom px-3 pt-3">

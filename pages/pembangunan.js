@@ -4,6 +4,7 @@ import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
+import PembangunanCard from "../components/PembangunanCard";
 
 const title = "Pembangunan Desa";
 
@@ -49,6 +50,12 @@ export default function Pembangunan({ covid }) {
                 </div>
 
                 <div className="container my-5">
+                    <div className="row g-4">
+                        <PembangunanCard />
+                    </div>
+                </div>
+
+                <div className="container my-5">
                     <div className="card border-0 shadow-custom px-3 pt-3">
                         <div className="table-responsive">
                             <table className="table table-bordered table-hover">
@@ -88,13 +95,6 @@ export default function Pembangunan({ covid }) {
                                         <td>Pembangunan Gorong-Gorong</td>
                                         <td>RT 04</td>
                                         <td>Rp. 419.655,-</td>
-                                        <td>Dana Desa</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Pembangunan Jembatan</td>
-                                        <td>RT 05</td>
-                                        <td>Rp. 519.655,-</td>
                                         <td>Dana Desa</td>
                                     </tr>
                                 </tbody>

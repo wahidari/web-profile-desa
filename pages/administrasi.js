@@ -47,9 +47,9 @@ export default function InformasiPublik({ covid }) {
             <NavBarTop />
 
             <main>
-                {/* <div className="bg-light">
+                <div className="bg-light">
                     <Breadcrumb pageName="Administrasi" currentPage="Administrasi" />
-                </div> */}
+                </div>
 
                 <div className="container my-5">
                     <div className=" card border-0 shadow-custom px-3 pt-3">
