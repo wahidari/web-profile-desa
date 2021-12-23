@@ -82,16 +82,16 @@ export default function Footer() {
                             <h5 className="mb-3">Aplikasi Desa</h5>
                             <ul className="list-unstyled text-white-80 text-decoration-none text-15">
                                 <li className="my-2">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="text-decoration-none text-white-80">Sistem Desa</a>
+                                    <a href="https://web-anjungan-desa.vercel.app" className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Sistem Desa</a>
                                 </li>
                                 <li className="my-2">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="text-decoration-none text-white-80">Pengaduan Online</a>
+                                    <a href="https://web-anjungan-desa.vercel.app" className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengaduan Online</a>
                                 </li>
                                 <li className="my-2">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="text-decoration-none text-white-80">Pengajuan Surat</a>
+                                    <a href="https://web-anjungan-desa.vercel.app" className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Pengajuan Surat</a>
                                 </li>
                                 <li className="my-2">
-                                    <a href="https://sistem-desa.vercel.app/index.html" className="text-decoration-none text-white-80">Info Kesehatan</a>
+                                    <a href="https://web-anjungan-desa.vercel.app" className="text-decoration-none text-white-80" rel="noreferrer" target="_blank">Info Kesehatan</a>
                                 </li>
                             </ul>
                         </div>
