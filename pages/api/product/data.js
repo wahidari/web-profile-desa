@@ -82,7 +82,7 @@ export const products = [
         "name": "Product H",
         "category": "Makanan",
         "price": "17000",
-        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/12/30/9b9fafc4-f80e-492d-b8c4-1a39d5e0c112.jpg",
+        "image": "/produk.png",
         "phone": "628123456789",
         "seller": "Seller H",
         "description": "Lorem Ipsum is simply dummy text of the printing"

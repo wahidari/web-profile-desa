@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import BreadcrumbArea from "../components/BreadcrumbArea";
-import imgLogo from "../public/logo.png";
+import avatarImg from "../public/avatar.png";
 import Image from "next/image";
 import BackToTop from "../components/BackToTop";
 
@@ -46,7 +46,7 @@ export default function Struktur({ posts }) {
                     <div className="row g-4 my-2">
                         <div className="col-sm-3">
                             <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                <Image alt="Image" src={imgLogo} className="img-fluid mx-auto rounded"/>
+                                <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded"/>
                             </div>
                         </div>
                         <div className="col-sm-9">
@@ -74,7 +74,7 @@ export default function Struktur({ posts }) {
                             <div className="row">
                                 <div className="col-sm-3">
                                     <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                        <Image alt="Image" src={imgLogo} className="img-fluid mx-auto rounded" />
+                                        <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
@@ -102,7 +102,7 @@ export default function Struktur({ posts }) {
                             <div className="row">
                                 <div className="col-sm-3">
                                     <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                        <Image alt="Image" src={imgLogo} className="img-fluid mx-auto rounded" />
+                                        <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">

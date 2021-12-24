@@ -80,6 +80,7 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                     src={agenda.image}
                                     width="450"
                                     height="400"
+                                    quality={90}
                                     className="card-img-top img-fluid"
                                 />
                                 <div className="card-body">

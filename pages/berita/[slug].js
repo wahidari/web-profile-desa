@@ -79,6 +79,7 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                                     src={post.image}
                                     width="450"
                                     height="400"
+                                    quality={90}
                                     className="card-img-top img-fluid"
                                 />
                                 <div className="card-body">

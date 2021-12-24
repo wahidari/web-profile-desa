@@ -18,7 +18,7 @@ export default function ProductCard({ id, slug, name, category, price, image, ph
             </style>
 
             <div className="card card-img-hover-zoom h-100 shadow-sm border-0 rounded-3">
-                <Image alt={name} src={image} width={270} height={200} className="img-fluid rounded-top" />
+                <Image alt={name} src={image} width={270} height={200} quality={90} className="img-fluid rounded-top" />
                 <div className="card-body">
                     <h6>{name}</h6>
                     <h5 className="mb-3">Rp. {price}</h5>
