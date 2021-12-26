@@ -56,7 +56,7 @@ export default function ProdukHukum({ covid }) {
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Judul Dokumen</th>
+                                        <th>Dokumen</th>
                                         <th>Jenis</th>
                                         <th>Tahun</th>
                                         <th>Aksi</th>

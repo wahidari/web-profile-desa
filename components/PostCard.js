@@ -32,6 +32,9 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                     color: #495057;
                     font-size: 15px;
                 }
+                .mt-n1 {
+                    margin-top: -2px;
+                }
             `}</style>
 
             <article className="card card-link shadow-card border-0 h-100">
@@ -49,12 +52,12 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                         <a className="stretched-link"><h5 className="card-title">{title}</h5></a>
                     </Link>
                     <div className="d-flex blog-meta py-2">
-                        <div className="me-3">
-                            <i className="me-2"><FaUser /></i>
+                        <div className="me-3 d-flex">
+                            <i className="me-2 mt-n1"><FaUser /></i>
                             {author}
                         </div>
-                        <div>
-                            <i className="me-2"><FaRegCalendarAlt /></i>
+                        <div className="d-flex">
+                            <i className="me-2 mt-n1"><FaRegCalendarAlt /></i>
                             {date}
                         </div>
                     </div>
