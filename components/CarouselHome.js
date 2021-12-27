@@ -60,6 +60,11 @@ export default function CarouselHome() {
                         bottom: 10em !important;
                     }
                 }
+                @media (min-width: 1600px) {
+                    .carousel-caption {
+                        bottom: 24em !important;
+                    }
+                }
             `}</style>
 
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -72,8 +77,8 @@ export default function CarouselHome() {
                         <Image
                             alt="Carousel"
                             src={imgHero}
-                            width="1400"
-                            height="700"
+                            width="1920"
+                            height="960"
                             className="d-block w-100 carousel-zoom"
                         />
                         <div className="carousel-overlay"></div>
@@ -86,8 +91,8 @@ export default function CarouselHome() {
                         <Image
                             alt="Carousel"
                             src={imgHeroA}
-                            width="1400"
-                            height="700"
+                            width="1920"
+                            height="960"
                             className="d-block w-100 carousel-zoom"
                         />
                         <div className="carousel-overlay"></div>
@@ -100,8 +105,8 @@ export default function CarouselHome() {
                         <Image
                             alt="Carousel"
                             src={imgHeroB}
-                            width="1400"
-                            height="700"
+                            width="1920"
+                            height="960"
                             className="d-block w-100 carousel-zoom"
                         />
                         <div className="carousel-overlay"></div>
