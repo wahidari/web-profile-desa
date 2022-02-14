@@ -17,6 +17,22 @@ a {
 	box-sizing: border-box;
 }
 
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fs-15 {
+	font-size: 15px;
+}
+
+.text-dark-secondary {
+	color: #495057;
+}
+
 /* Very Small devices (Max width 575.98px) */
 @media (max-width: 575.98px) {
 	.carousel-item img {
@@ -89,6 +105,21 @@ a {
 /* Swiper Blog Post  */
 .swiper-custom {
 	padding: 14px 14px 50px 14px !important;
+}
+
+/* Swiper Pembangunan Post  */
+.swiper-pembangunan .swiper-button-next::after, .swiper-pembangunan .swiper-button-prev::after {
+	font-size: 10px;
+	font-weight: 600;
+	background-color: #00000063;
+	padding: 8px 11px;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.swiper-pembangunan .swiper-button-next:hover::after, .swiper-pembangunan .swiper-button-prev:hover::after {
+	background-color: #000000 !important;
+	transition: background-color 0.2s ease-in;
 }
 
 /* Progress Bar on Top of Page  */

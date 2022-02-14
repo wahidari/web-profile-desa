@@ -1,10 +1,22 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import NavBarTop from "../components/NavBarTop";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
 import PembangunanCard from "../components/PembangunanCard";
+import { HiOutlineLocationMarker, HiOutlineCreditCard } from "react-icons/hi";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperCore, { Autoplay } from 'swiper';
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// install Swiper modules
+SwiperCore.use([Autoplay, Navigation]);
 
 const title = "Pembangunan Desa";
 
@@ -26,6 +38,52 @@ export default function Pembangunan({ covid }) {
                 {`
                 .shadow-custom {
                     box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+                }
+                /* Very Small devices (Max width 575.98px) */
+                @media (max-width: 575.98px) {
+                    .image-container {
+                        width: 100% !important;
+                        height: 250px !important;
+                    }
+                }
+                /* Small devices (landscape phones, 576px and up) */
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    .image-container {
+                        width: 100% !important;
+                        height: 300px !important;
+                    }
+                }
+                /* Medium devices (tablets, 768px and up) */
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    .image-container {
+                        width: 270px !important;
+                        height: 230px !important;
+                    }
+                }
+                /* Large devices (desktops, 992px and up) */
+                @media (min-width: 992px) and (max-width: 1199.98px) {
+                    .image-container {
+                        width: 300px !important;
+                        height: 230px !important;
+                    }
+                }
+                .image-container {
+                    width: 350px;
+                    height: 250px;
+                    position: relative;
+                }
+                .image-container .image {
+                    width: 100%;
+                    height: 100%;
+                }
+                i {
+                    font-size: 20px;
+                }
+                .td-fixed {
+                    width: 60px;
+                }
+                .td-fixed-10 {
+                    width: 10px;
                 }
             `}
             </style>
@@ -52,6 +110,150 @@ export default function Pembangunan({ covid }) {
                 <div className="container my-5">
                     <div className="row g-4">
                         <PembangunanCard />
+                    </div>
+                </div>
+
+                <div className="container my-5">
+                    <div className="card px-md-3 py-md-3">
+                        <div className="row">
+                            <div className="col-md-5 col-lg-4 m-auto">
+                                <div className="image-container">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                        alt=""
+                                        layout="fill"
+                                        className="img-fluid rounded image">
+                                    </Image>
+                                </div>
+                            </div>
+                            <div className="col-md-7 col-lg-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">Pembangunan Jembatan Penghubung Persawahan</h5>
+                                    <p className="card-text text-dark-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div className="d-flex">
+                                        <p className="text-dark-secondary fw-600 me-4">
+                                            <i className="me-2"><HiOutlineLocationMarker /></i>
+                                            RT 01
+                                        </p>
+                                        <p className="text-dark-secondary fw-600">
+                                            <i className="me-2"><HiOutlineCreditCard /></i>
+                                            Rp. 119.655
+                                        </p>
+                                    </div>
+                                    <div className="progress">
+                                        <div className="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    <p className="card-text mt-4"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container my-5">
+                    <div className="card px-md-3 py-md-3">
+                        <div className="row">
+                            <div className="col-md-5 col-lg-4 m-auto">
+                                <Swiper className="swiper-pembangunan"
+                                    spaceBetween={24}
+                                    autoplay={{
+                                        "delay": 4000,
+                                        "disableOnInteraction": false
+                                    }}
+                                    navigation={true}
+                                    loop={true}
+                                >
+                                    <SwiperSlide >
+                                        <div className="image-container">
+                                            <Image
+                                                src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                                alt=""
+                                                layout="fill"
+                                                className="img-fluid rounded image">
+                                            </Image>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide >
+                                        <div className="image-container">
+                                            <Image
+                                                src="https://images.unsplash.com/photo-1638201977889-7cf4026c7960?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                                alt=""
+                                                layout="fill"
+                                                className="img-fluid rounded image">
+                                            </Image>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+
+                            </div>
+                            <div className="col-md-7 col-lg-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">Pembangunan Jembatan Penghubung Persawahan</h5>
+                                    <p className="card-text text-dark-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div className="d-flex">
+                                        <p className="text-dark-secondary fw-600 me-4">
+                                            <i className="me-2"><HiOutlineLocationMarker /></i>
+                                            RT 01
+                                        </p>
+                                        <p className="text-dark-secondary fw-600">
+                                            <i className="me-2"><HiOutlineCreditCard /></i>
+                                            Rp. 119.655
+                                        </p>
+                                    </div>
+                                    <div className="progress">
+                                        <div className="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    <p className="card-text mt-4"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container my-5">
+                    <div className="card px-md-3 py-md-3">
+                        <div className="row">
+                            <div className="col-md-5 col-lg-4 m-auto">
+                                <div className="image-container">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                        alt=""
+                                        layout="fill"
+                                        className="img-fluid rounded image">
+                                    </Image>
+                                </div>
+                            </div>
+                            <div className="col-md-7 col-lg-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">Pembangunan MCK dan Tempat Wudhu Masjid</h5>
+                                    <p className="card-text text-dark-secondary  fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <table className="table table-borderless fs-15 fw-500">
+                                        <tbody>
+                                            <tr>
+                                                <td className="ps-0 py-1 td-fixed">Lokasi</td>
+                                                <td className="py-1 td-fixed-10">:</td>
+                                                <td className="py-1">RT 01</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="ps-0 py-1 td-fixed">Dana</td>
+                                                <td className="py-1 td-fixed-10">:</td>
+                                                <td className="py-1">RT 01</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="ps-0 py-1 td-fixed">Progress</td>
+                                                <td className="py-1 td-fixed-10">:</td>
+                                                <td className="py-1">
+                                                    <div className="progress mt-1">
+                                                        <div className="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p className="card-text mt-1 mb-0"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
