@@ -201,7 +201,7 @@ export default function Pembangunan({ covid }) {
                                         </p>
                                     </div>
                                     <div className="progress">
-                                        <div className="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        <div className="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                                     </div>
                                     <p className="card-text mt-4"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
                                 </div>
@@ -244,7 +244,7 @@ export default function Pembangunan({ covid }) {
                                                 <td className="py-1 td-fixed-10">:</td>
                                                 <td className="py-1">
                                                     <div className="progress mt-1">
-                                                        <div className="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                        <div className="progress-bar w-75 bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                                                     </div>
                                                 </td>
                                             </tr>
