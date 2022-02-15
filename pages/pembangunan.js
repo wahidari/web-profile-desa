@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import BackToTop from "../components/BackToTop";
 import PembangunanCard from "../components/PembangunanCard";
-import { HiOutlineLocationMarker, HiOutlineCreditCard } from "react-icons/hi";
+import { HiOutlineLocationMarker, HiOutlineCreditCard, HiOutlineCalendar } from "react-icons/hi";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Autoplay } from 'swiper';
@@ -195,9 +195,13 @@ export default function Pembangunan({ covid }) {
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
                                             RT 01
                                         </p>
-                                        <p className="text-dark-secondary fw-600">
+                                        <p className="text-dark-secondary fw-600 me-4">
                                             <i className="me-2"><HiOutlineCreditCard /></i>
                                             Rp. 119.655
+                                        </p>
+                                        <p className="text-dark-secondary fw-600 me-4">
+                                            <i className="me-2"><HiOutlineCalendar /></i>
+                                            2022
                                         </p>
                                     </div>
                                     <div className="progress">

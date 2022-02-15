@@ -107,7 +107,11 @@ a {
 	padding: 14px 14px 50px 14px !important;
 }
 
-/* Swiper Pembangunan Post  */
+/* Swiper Pembangunan */
+.swiper-pembangunan {
+	border-radius: 4px;
+}
+
 .swiper-pembangunan .swiper-button-next::after, .swiper-pembangunan .swiper-button-prev::after {
 	font-size: 14px;
 	font-weight: 600;
@@ -118,7 +122,7 @@ a {
 }
 
 .swiper-pembangunan .swiper-button-next:hover::after, .swiper-pembangunan .swiper-button-prev:hover::after {
-	background-color: #000000 !important;
+	background-color: #000000b6 !important;
 	transition: background-color 0.2s ease-in;
 }
 
