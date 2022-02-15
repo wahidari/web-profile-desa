@@ -109,10 +109,10 @@ a {
 
 /* Swiper Pembangunan Post  */
 .swiper-pembangunan .swiper-button-next::after, .swiper-pembangunan .swiper-button-prev::after {
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: 600;
 	background-color: #00000063;
-	padding: 8px 11px;
+	padding: 8px 12px;
 	border-radius: 50%;
 	color: #fff;
 }

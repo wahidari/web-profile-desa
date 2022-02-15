@@ -119,7 +119,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <div className="image-container">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                         alt=""
                                         layout="fill"
                                         className="img-fluid rounded image">
@@ -155,7 +155,7 @@ export default function Pembangunan({ covid }) {
                         <div className="row">
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <Swiper className="swiper-pembangunan"
-                                    spaceBetween={24}
+                                    spaceBetween={16}
                                     autoplay={{
                                         "delay": 4000,
                                         "disableOnInteraction": false
@@ -166,7 +166,7 @@ export default function Pembangunan({ covid }) {
                                     <SwiperSlide >
                                         <div className="image-container">
                                             <Image
-                                                src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                                 alt=""
                                                 layout="fill"
                                                 className="img-fluid rounded image">
@@ -176,7 +176,7 @@ export default function Pembangunan({ covid }) {
                                     <SwiperSlide >
                                         <div className="image-container">
                                             <Image
-                                                src="https://images.unsplash.com/photo-1638201977889-7cf4026c7960?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                                src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                                 alt=""
                                                 layout="fill"
                                                 className="img-fluid rounded image">
@@ -189,7 +189,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
                                     <h5 className="card-title">Pembangunan Jembatan Penghubung Persawahan</h5>
-                                    <p className="card-text text-dark-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p className="card-text text-dark-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div className="d-flex">
                                         <p className="text-dark-secondary fw-600 me-4">
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
@@ -216,7 +216,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <div className="image-container">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                        src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                                         alt=""
                                         layout="fill"
                                         className="img-fluid rounded image">
