@@ -45,7 +45,7 @@ export default function Lapak({products}) {
                 <div className="container my-5">
                     <div className="row g-4">
                         {products.map(product =>
-                            <div className="col-sm-6 col-md-6 col-lg-3" key={product.id}>
+                            <div className="col-sm-6 col-md-4 col-lg-3" key={product.id}>
                                 <ProductCard 
                                     id={product.id} 
                                     slug={product.slug} 

@@ -9,23 +9,26 @@ export default function ProductCard({ id, slug, name, category, price, image, ph
             <style jsx>
                 {`
                 h6 {
-                    font-weight: 600;
+                    font-weight: 500;
                 }
                 h5 {
-                    font-weight: 500;
+                    font-weight: 600;
+                }
+                .shadow-custom {
+                    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
                 }
             `}
             </style>
 
-            <div className="card card-img-hover-zoom h-100 shadow-sm border-0 rounded-3">
+            <div className="card card-img-hover-zoom h-100 border-0 shadow-custom rounded-3">
                 <Image alt={name} src={image} width={270} height={200} quality={90} className="img-fluid rounded-top" />
                 <div className="card-body">
                     <h6>{name}</h6>
-                    <h5 className="mb-3">Rp. {price}</h5>
+                    <h5 className="my-2">Rp. {price}</h5>
                     <p className="mb-0 text-14 text-secondary small">{description}</p>
                 </div>
-                <div className="card-footer">
-                    <a href={`https://wa.me/${phone}?text=Saya%20ingin%20memesan%20${name}`} className="text-decoration-none" rel="noreferrer" target="_blank"><i className="me-2"><FaWhatsapp /></i>Pesan via Whatsapp</a>
+                <div className="card-footer bg-white">
+                    <a href={`https://wa.me/${phone}?text=Saya%20ingin%20memesan%20${name}`} className="btn btn-sm btn-success" rel="noreferrer" target="_blank"><i className="me-2"><FaWhatsapp /></i>Whatsapp</a>
                 </div>
             </div>
         </>
