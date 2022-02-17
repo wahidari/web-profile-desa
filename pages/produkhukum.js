@@ -44,15 +44,15 @@ export default function ProdukHukum({ covid }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
 					<Breadcrumb pageName="Hukum" currentPage="Produk Hukum" />
 				</div>
 
                 <div className="container my-5">
-                    <div className="card border-0 shadow-custom px-3 pt-3">
-                        <h4>Produk Hukum</h4>
+                    <div className="card bg-card-primary border-0 shadow-custom px-3 pt-3">
+                        <h4 className="text-color-primary">Produk Hukum</h4>
                         <div className="table-responsive mt-3">
-                            <table className="table table-borderless table-hover">
+                            <table className="table text-color-secondary table-borderless">
                                 <thead>
                                     <tr>
                                         <th>No</th>

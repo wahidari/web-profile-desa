@@ -41,7 +41,7 @@ export default function Form({identity}) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Form" currentPage="Form" />
                 </div>
 

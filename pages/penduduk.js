@@ -74,17 +74,17 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Penduduk" currentPage="Penduduk" />
                 </div>
 
                 <div className="container my-5" id="jenis-kelamin">
-                    <div className="card rounded shadow-card border-0 my-5">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Jenis Kelamin</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Jenis Kelamin</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
                                     data={dataGender}
@@ -92,9 +92,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>
@@ -121,12 +121,12 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                         </div>
                     </div>
 
-                    <div className="card rounded shadow-card border-0 my-5" id="pendidikan">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Pendidikan</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5" id="pendidikan">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Pendidikan</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
                                     data={dataEducation}
@@ -134,9 +134,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>
@@ -163,12 +163,12 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                         </div>
                     </div>
 
-                    <div className="card rounded shadow-card border-0 my-5" id="agama">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Agama</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5" id="agama">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Agama</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
                                     data={dataReligion}
@@ -176,9 +176,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>
@@ -205,12 +205,12 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                         </div>
                     </div>
 
-                    <div className="card rounded shadow-card border-0 my-5" id="pekerjaan">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Pekerjaan</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5" id="pekerjaan">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Pekerjaan</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
                                     data={dataPekerjaan}
@@ -218,9 +218,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>
@@ -247,12 +247,12 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                         </div>
                     </div>
 
-                    <div className="card rounded shadow-card border-0 my-5" id="usia">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Usia</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5" id="usia">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Usia</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-6 mx-auto">
                                 <Bar
                                     options={options}
@@ -261,9 +261,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>
@@ -290,12 +290,12 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                         </div>
                     </div>
 
-                    <div className="card rounded shadow-card border-0 my-5" id="status">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Demografi Berdasarkan Status</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5" id="status">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Demografi Berdasarkan Status</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
                                     data={dataStatus}
@@ -303,9 +303,9 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                     height={250}
                                 />
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th className="fw-600">No</th>

@@ -81,7 +81,7 @@ export default function Foto({ photos }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Galeri" currentPage="Foto" />
                 </div>
 

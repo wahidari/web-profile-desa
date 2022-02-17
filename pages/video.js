@@ -39,7 +39,7 @@ export default function Video({ videos }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Galeri" currentPage="Video" />
                 </div>
 

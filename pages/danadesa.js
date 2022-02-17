@@ -63,17 +63,17 @@ export default function DanaDesa({ danadesa }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Dana Desa" currentPage="Dana Desa" />
                 </div>
 
                 <div className="container my-5">
-                    <div className="card rounded shadow-card border-0 my-5">
-                        <div className="card-header py-3">
-                            <h5 className="m-0 font-weight-bold">Dana Desa</h5>
+                    <div className="card bg-card-primary rounded shadow-card border-0 my-5">
+                        <div className="card-header bg-color-secondary py-3">
+                            <h5 className="m-0 font-weight-bold text-color-primary">Dana Desa</h5>
                         </div>
                         <div className="card-body">
-                            <h5>Grafik</h5>
+                            <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
                                     data={dataDanaDesa}
@@ -86,9 +86,9 @@ export default function DanaDesa({ danadesa }) {
                                     height={250}
                                 /> */}
                             </div>
-                            <h5 className="mt-5">Tabel Data</h5>
+                            <h5 className="mt-5 text-color-primary">Tabel Data</h5>
                             <div className="table-responsive mt-3">
-                                <table className="table table-bordered table-hover">
+                                <table className="table table-bordered table-bordered-primary text-color-secondary">
                                     <thead>
                                         <tr>
                                             <th>Uraian</th>

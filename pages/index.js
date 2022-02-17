@@ -129,8 +129,8 @@ export default function Home({ posts, agendas, videos, photos }) {
                             </div>
                             <div className="col-md-7" data-aos="fade-up" data-aos-duration="1500">
                                 <div className="text-center text-md-start mt-3 mt-md-0">
-                                    <h3 className="pb-2">Website Desa {namaDesa}</h3>
-                                    <p className="text-dark-secondary" id="scroll-to-statistic">
+                                    <h3 className="pb-2 text-color-primary">Website Desa {namaDesa}</h3>
+                                    <p className="text-color-secondary" id="scroll-to-statistic">
                                         Website Resmi Desa {namaDesa}, Kec. {namaKecamatan}, Kabupaten Bangkalan, Jawa Timur. Media komunikasi dan transparansi Pemerintah Desa untuk seluruh masyarakat di Indonesia
                                     </p>
                                     <Link href="/sejarah">
@@ -148,7 +148,7 @@ export default function Home({ posts, agendas, videos, photos }) {
 
                 <div className="container my-5 py-4">
                     <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Agenda</h3>
+                        <h3 className="mb-0 text-color-primary">Agenda</h3>
                         <Link href="/agenda">
                             <a className="text-decoration-none">Semua Agenda
                                 <i className="ms-2"><FaArrowRight /></i>
@@ -234,7 +234,7 @@ export default function Home({ posts, agendas, videos, photos }) {
 
                 <div className="container my-5 py-4" id="scroll-to">
                     <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Berita</h3>
+                        <h3 className="mb-0 text-color-primary">Berita</h3>
                         <Link href="/berita">
                             <a className="text-decoration-none">Semua Berita
                                 <i className="ms-2"><FaArrowRight /></i>
@@ -320,7 +320,7 @@ export default function Home({ posts, agendas, videos, photos }) {
 
                 <div className="container my-5 py-4">
                     <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Foto</h3>
+                        <h3 className="mb-0 text-color-primary">Foto</h3>
                         <Link href="/foto">
                             <a className="text-decoration-none">Semua Foto
                                 <i className="ms-2"><FaArrowRight /></i>
@@ -350,7 +350,7 @@ export default function Home({ posts, agendas, videos, photos }) {
 
                 <div className="container my-5 py-4">
                     <div className="d-flex align-items-center justify-content-between mb-4">
-                        <h3 className="mb-0">Video</h3>
+                        <h3 className="mb-0 text-color-primary">Video</h3>
                         <Link href="/video">
                             <a className="text-decoration-none">Semua Video
                                 <i className="ms-2"><FaArrowRight /></i>

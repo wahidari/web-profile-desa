@@ -38,18 +38,15 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                 }
                 .blog-meta a .icon {
                     font-size: 15px;
-                    color: #495057;
                 }
                 .blog-meta a {
                     font-size: 14px;
                     text-decoration: none;
-                    color: #495057;
                 }
                 .blog-meta a:hover {
                     color: #0d6efd;
                 }
                 .card-text {
-                    color: #495057;
                     font-size: 16px;
                 }
             `}
@@ -74,7 +71,7 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                     <div className="row g-5">
                         {/* Start Main Content */}
                         <div className="col-lg-8">
-                            <div className="card shadow-blog border-0">
+                            <div className="card bg-card-primary shadow-blog border-0">
                                 <Image
                                     alt="Image"
                                     src={agenda.image}
@@ -84,14 +81,14 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                     className="card-img-top img-fluid"
                                 />
                                 <div className="card-body">
-                                    <h3 className="card-title">{agenda.title}</h3>
-                                    <div className="d-block d-sm-flex blog-meta pt-2">
+                                    <h3 className="card-title text-color-primary">{agenda.title}</h3>
+                                    <div className="d-block d-sm-flex blog-meta pt-2 text-color-muted">
                                         <div className="d-flex mb-2">
                                             <FaRegCalendarAlt />
                                             <small className="text-muted ms-2">{agenda.date}</small>
                                         </div>
                                     </div>
-                                    <p className="card-text mt-2">{agenda.body}</p>
+                                    <p className="card-text mt-2 text-color-secondary">{agenda.body}</p>
                                 </div>
                             </div>
                         </div>
@@ -99,8 +96,8 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
 
                         {/* Start Right Content */}
                         <div className="col-lg-4">
-                            <div className="card shadow-blog border-0 px-3 py-2">
-                                <h5 className="mb-3">Random Posts</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2">
+                                <h5 className="mb-3 text-color-primary">Random Posts</h5>
                                 {someRandomPosts.map(item =>
                                     <div key={item.id}>
                                         <PostList
@@ -114,22 +111,22 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                 )}
                             </div>
 
-                            <div className="card shadow-blog border-0 px-3 py-2 mt-4">
-                                <h5 className="mb-3">Categories</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2 mt-4">
+                                <h5 className="mb-3 text-color-primary">Categories</h5>
                                 <ul className="list-group border-0">
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/berita">
                                             <a className="text-decoration-none">Berita</a>
                                         </Link>
                                         <span className="badge bg-primary rounded-pill">7</span>
                                     </li>
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/kesehatan">
                                             <a className="text-decoration-none">Kesehatan</a>
                                         </Link>
                                         <span className="badge bg-primary rounded-pill">5</span>
                                     </li>
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/acak">
                                             <a className="text-decoration-none">Acak</a>
                                         </Link>
@@ -138,8 +135,8 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                 </ul>
                             </div>
 
-                            <div className="card shadow-blog border-0 px-3 py-2 mt-4">
-                                <h5 className="mb-3">Latest Agenda</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2 mt-4">
+                                <h5 className="mb-3 text-color-primary">Latest Agenda</h5>
                                 {someRandomAgendas.map(item =>
                                     <div key={item.id}>
                                         <AgendaList

@@ -38,7 +38,7 @@ export default function Lapak({products}) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Lapak" currentPage="Lapak" />
                 </div>
 

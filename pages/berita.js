@@ -38,7 +38,7 @@ export default function Berita({posts}) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Berita" currentPage="Berita" />
                 </div>
 

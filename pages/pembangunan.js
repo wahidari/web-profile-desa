@@ -103,7 +103,7 @@ export default function Pembangunan({ covid }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Pembangunan" currentPage="Pembangunan" />
                 </div>
 
@@ -114,7 +114,7 @@ export default function Pembangunan({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <div className="card px-md-3 py-md-3">
+                    <div className="card bg-card-primary px-md-3 py-md-3">
                         <div className="row">
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <div className="image-container">
@@ -128,14 +128,14 @@ export default function Pembangunan({ covid }) {
                             </div>
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Pembangunan Jembatan Penghubung Persawahan</h5>
-                                    <p className="card-text text-dark-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div className="d-flex">
-                                        <p className="text-dark-secondary fw-600 me-4">
+                                    <h5 className="card-title text-color-primary">Pembangunan Jembatan Penghubung Persawahan</h5>
+                                    <p className="card-text text-color-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div className="d-flex text-color-secondary">
+                                        <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
                                             RT 01
                                         </p>
-                                        <p className="text-dark-secondary fw-600">
+                                        <p className="fw-600">
                                             <i className="me-2"><HiOutlineCreditCard /></i>
                                             Rp. 119.655
                                         </p>
@@ -143,7 +143,7 @@ export default function Pembangunan({ covid }) {
                                     <div className="progress">
                                         <div className="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                     </div>
-                                    <p className="card-text mt-4"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                    <p className="card-text mt-4"><small className="text-color-muted">Update tanggal 10 Jan 2022</small></p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ export default function Pembangunan({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <div className="card px-md-3 py-md-3">
+                    <div className="card bg-card-primary px-md-3 py-md-3">
                         <div className="row">
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <Swiper className="swiper-pembangunan"
@@ -188,18 +188,18 @@ export default function Pembangunan({ covid }) {
                             </div>
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Pembangunan Jembatan Penghubung Persawahan</h5>
-                                    <p className="card-text text-dark-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div className="d-flex">
-                                        <p className="text-dark-secondary fw-600 me-4">
+                                    <h5 className="card-title text-color-primary">Pembangunan Jembatan Penghubung Persawahan</h5>
+                                    <p className="card-text text-color-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div className="d-flex text-color-secondary">
+                                        <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
                                             RT 01
                                         </p>
-                                        <p className="text-dark-secondary fw-600 me-4">
+                                        <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineCreditCard /></i>
                                             Rp. 119.655
                                         </p>
-                                        <p className="text-dark-secondary fw-600 me-4">
+                                        <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineCalendar /></i>
                                             2022
                                         </p>
@@ -207,7 +207,7 @@ export default function Pembangunan({ covid }) {
                                     <div className="progress">
                                         <div className="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                                     </div>
-                                    <p className="card-text mt-4"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                    <p className="card-text mt-4"><small className="text-color-muted">Update tanggal 10 Jan 2022</small></p>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ export default function Pembangunan({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <div className="card px-md-3 py-md-3">
+                    <div className="card bg-card-primary px-md-3 py-md-3">
                         <div className="row">
                             <div className="col-md-5 col-lg-4 m-auto">
                                 <div className="image-container">
@@ -229,9 +229,9 @@ export default function Pembangunan({ covid }) {
                             </div>
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Pembangunan MCK dan Tempat Wudhu Masjid</h5>
-                                    <p className="card-text text-dark-secondary  fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <table className="table table-borderless fs-15 fw-500">
+                                    <h5 className="card-title text-color-primary">Pembangunan MCK dan Tempat Wudhu Masjid</h5>
+                                    <p className="card-text text-color-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <table className="table table-borderless text-color-secondary fs-15 fw-500">
                                         <tbody>
                                             <tr>
                                                 <td className="ps-0 py-1 td-fixed">Lokasi</td>
@@ -254,7 +254,7 @@ export default function Pembangunan({ covid }) {
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <p className="card-text mt-1 mb-0"><small className="text-muted">Update tanggal 10 Jan 2022</small></p>
+                                    <p className="card-text mt-1 mb-0"><small className="text-color-muted">Update tanggal 10 Jan 2022</small></p>
                                 </div>
                             </div>
                         </div>
@@ -262,9 +262,9 @@ export default function Pembangunan({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <div className="card border-0 shadow-custom px-3 pt-3">
+                    <div className="card bg-card-primary border-0 shadow-custom px-3 pt-3">
                         <div className="table-responsive">
-                            <table className="table table-bordered table-hover">
+                            <table className="table table-bordered text-color-secondary table-bordered-primary">
                                 <thead>
                                     <tr>
                                         <th>No</th>

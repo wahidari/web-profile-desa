@@ -39,15 +39,12 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                 }
                 .blog-meta .icon {
                     font-size: 15px;
-                    color: #495057;
                 }
                 .blog-meta {
                     font-size: 14px;
                     text-decoration: none;
-                    color: #495057;
                 }
                 .card-text {
-                    color: #495057;
                     font-size: 16px;
                 }
             `}
@@ -73,7 +70,7 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
 
                         {/* Start Main Content */}
                         <div className="col-lg-8">
-                            <div className="card shadow-blog border-0">
+                            <div className="card bg-card-primary shadow-blog border-0">
                                 <Image
                                     alt="Image"
                                     src={post.image}
@@ -83,8 +80,8 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                                     className="card-img-top img-fluid"
                                 />
                                 <div className="card-body">
-                                    <h3 className="card-title">{post.title}</h3>
-                                    <div className="d-flex blog-meta py-2">
+                                    <h3 className="card-title text-color-primary">{post.title}</h3>
+                                    <div className="d-flex blog-meta py-2 text-color-muted">
                                         <div className="me-3">
                                             <i className="me-2 icon"><FaUser /></i>
                                             {post.author}
@@ -94,7 +91,7 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                                             {post.date}
                                         </div>
                                     </div>
-                                    <p className="card-text mt-2">{post.body}</p>
+                                    <p className="card-text mt-2 text-color-secondary">{post.body}</p>
                                 </div>
                             </div>
                         </div>
@@ -102,8 +99,8 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
 
                         {/* Start Right Content */}
                         <div className="col-lg-4">
-                            <div className="card shadow-blog border-0 px-3 py-2">
-                                <h5 className="mb-3">Random Posts</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2">
+                                <h5 className="mb-3 text-color-primary">Random Posts</h5>
                                 {someRandomPosts.map(item =>
                                     <div key={item.id}>
                                         <PostList
@@ -117,22 +114,22 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                                 )}
                             </div>
 
-                            <div className="card shadow-blog border-0 px-3 py-2 mt-4">
-                                <h5 className="mb-3">Categories</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2 mt-4">
+                                <h5 className="mb-3 text-color-primary">Categories</h5>
                                 <ul className="list-group border-0">
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/berita">
                                             <a className="text-decoration-none">Berita</a>
                                         </Link>
                                         <span className="badge bg-primary rounded-pill">7</span>
                                     </li>
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/kesehatan">
                                             <a className="text-decoration-none">Kesehatan</a>
                                         </Link>
                                         <span className="badge bg-primary rounded-pill">5</span>
                                     </li>
-                                    <li className="list-group-item border-0 px-0 py-1 d-flex justify-content-between align-items-center">
+                                    <li className="list-group-item bg-card-primary border-0 px-0 py-1 d-flex justify-content-between align-items-center">
                                         <Link href="/berita/kategori/acak">
                                             <a className="text-decoration-none">Acak</a>
                                         </Link>
@@ -141,8 +138,8 @@ export default function BlogDetail({ post, randomPosts, randomAgendas }) {
                                 </ul>
                             </div>
 
-                            <div className="card shadow-blog border-0 px-3 py-2 mt-4">
-                                <h5 className="mb-3">Latest Agenda</h5>
+                            <div className="card bg-card-primary shadow-blog border-0 px-3 py-2 mt-4">
+                                <h5 className="mb-3 text-color-primary">Latest Agenda</h5>
                                 {someRandomAgendas.map(item =>
                                     <div key={item.id}>
                                         <AgendaList

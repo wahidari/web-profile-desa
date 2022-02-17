@@ -30,7 +30,7 @@ export default function Covid({ covid }) {
                     font-size: 14px;
                 }
                 @media (max-width: 767.98px) {
-                    .border-start {
+                    .border-start-primary {
                         border-left-color: #ffffff00 !important;
                     }
                 }
@@ -55,18 +55,18 @@ export default function Covid({ covid }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Covid-19" currentPage="Covid-19" />
                 </div>
 
                 <div className="container my-5">
-                    <h5>Statistik Covid-19</h5>
-                    <p className="text-dark-secondary">Update {covid.lastUpdate}</p>
+                    <h5 className="text-color-primary">Statistik Covid-19</h5>
+                    <p className="text-color-secondary">Update {covid.lastUpdate}</p>
                     <div className="row g-4 my-1">
                         <div className="col-sm-6 col-md-3">
-                            <div className="card shadow-custom rounded px-3 py-3 border-primary">
-                                <h5 className="mb-4">Konfirmasi</h5>
-                                <h6 className="text-dark-secondary">Bangkalan</h6>
+                            <div className="card bg-card-primary shadow-custom rounded px-3 py-3 border-primary">
+                                <h5 className="mb-4 text-color-primary">Konfirmasi</h5>
+                                <h6 className="text-color-secondary">Bangkalan</h6>
                                 <div className="d-flex align-content-center">
                                     <h5 id="stat-konfirmasi" className="text-primary fw-bold mb-0">{covid.konfirmasi}</h5>
                                     <span className="badge rounded-pill bg-primary text-14 fw-light ms-2">+ {covid.konfirmasiHarian}</span>
@@ -74,9 +74,9 @@ export default function Covid({ covid }) {
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-3">
-                            <div className="card shadow-custom rounded px-3 py-3 border-warning">
-                                <h5 className="mb-4">Aktif</h5>
-                                <h6 className="text-dark-secondary">Bangkalan</h6>
+                            <div className="card bg-card-primary shadow-custom rounded px-3 py-3 border-warning">
+                                <h5 className="mb-4 text-color-primary">Aktif</h5>
+                                <h6 className="text-color-secondary">Bangkalan</h6>
                                 <div className="d-flex align-content-center">
                                     <h5 id="stat-aktif" className="text-warning fw-bold mb-0">{covid.aktif}</h5>
                                     <span className="badge rounded-pill bg-warning text-14 fw-light ms-2">+ {covid.aktifHarian}</span>
@@ -84,9 +84,9 @@ export default function Covid({ covid }) {
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-3">
-                            <div className="card shadow-custom rounded px-3 py-3 border-success">
-                                <h5 className="mb-4">Sembuh</h5>
-                                <h6 className="text-dark-secondary">Bangkalan</h6>
+                            <div className="card bg-card-primary shadow-custom rounded px-3 py-3 border-success">
+                                <h5 className="mb-4 text-color-primary">Sembuh</h5>
+                                <h6 className="text-color-secondary">Bangkalan</h6>
                                 <div className="d-flex align-content-center">
                                     <h5 id="stat-sembuh" className="text-success fw-bold mb-0">{covid.sembuh}</h5>
                                     <span className="badge rounded-pill bg-success text-14 fw-light ms-2">+ {covid.sembuhHarian}</span>
@@ -94,9 +94,9 @@ export default function Covid({ covid }) {
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-3">
-                            <div className="card shadow-custom rounded px-3 py-3 border-danger">
-                                <h5 className="mb-4">Meninggal</h5>
-                                <h6 className="text-dark-secondary">Bangkalan</h6>
+                            <div className="card bg-card-primary shadow-custom rounded px-3 py-3 border-danger">
+                                <h5 className="mb-4 text-color-primary">Meninggal</h5>
+                                <h6 className="text-color-secondary">Bangkalan</h6>
                                 <div className="d-flex align-content-center">
                                     <h5 id="stat-meninggal" className="text-danger fw-bold mb-0">{covid.meninggal}</h5>
                                     <span className="badge rounded-pill bg-danger text-14 fw-light ms-2">+ {covid.meninggalHarian}</span>
@@ -107,9 +107,9 @@ export default function Covid({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <h5 className="mt-5 mb-4">Tabel Sebaran Covid-19</h5>
+                    <h5 className="mt-5 mb-4 text-color-primary">Tabel Sebaran Covid-19</h5>
                     <div className="table-responsive mt-3">
-                        <table id="tabel-sebaran" className="table table-bordered table-hover text-center">
+                        <table id="tabel-sebaran" className="table table-bordered table-bordered-primary text-color-secondary text-center">
                             <thead>
                                 <tr>
                                     <th>Kecamatan</th>
@@ -142,8 +142,8 @@ export default function Covid({ covid }) {
                 </div>
 
                 <div className="container my-5">
-                    <h5 className="mt-5 mb-4">Tentang Covid-19</h5>
-                    <div className="card rounded-3 shadow-sm my-3">
+                    <h5 className="mt-5 mb-4 text-color-primary">Tentang Covid-19</h5>
+                    <div className="card bg-card-primary border-color-primary rounded-3 shadow-sm my-3">
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="py-0 py-md-4 px-0 px-md-4">
@@ -167,12 +167,12 @@ export default function Covid({ covid }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-8 pt-4 px-4 border-start">
+                            <div className="col-md-8 pt-4 px-4 border-start-primary">
                                 <div className="tab-content" id="v-pills-tabContent">
                                     <div className="tab-pane fade show active" id="v-pills-apa" role="tabpanel"
                                         aria-labelledby="v-pills-apa-tab">
-                                        <h6 className="mb-3">Pengertian Covid-19</h6>
-                                        <p className="text-dark-secondary">Coronavirus Disease 2019 atau COVID-19 adalah
+                                        <h6 className="mb-3 text-color-primary">Pengertian Covid-19</h6>
+                                        <p className="text-color-secondary">Coronavirus Disease 2019 atau COVID-19 adalah
                                             penyakit baru yang dapat menyebabkan gangguan
                                             pernapasan dan radang paru.
                                             Penyakit ini disebabkan oleh infeksi Severe Acute Respiratory Syndrome
@@ -185,8 +185,8 @@ export default function Covid({ covid }) {
                                     </div>
                                     <div className="tab-pane fade show" id="v-pills-bagaimana" role="tabpanel"
                                         aria-labelledby="v-pills-bagaimana-tab">
-                                        <h6 className="mb-3">Covid-19 Menular Dengan Cara</h6>
-                                        <p className="text-dark-secondary">COVID-19 adalah penyakit baru dan para peneliti masih
+                                        <h6 className="mb-3 text-color-primary">Covid-19 Menular Dengan Cara</h6>
+                                        <p className="text-color-secondary">COVID-19 adalah penyakit baru dan para peneliti masih
                                             mempelajari bagaimana cara penularannya. Dari berbagai penelitian,
                                             metode penyebaran utama penyakit ini diduga adalah melalui droplet saluran
                                             pernapasan dan kontak dekat dengan penderita.
@@ -194,7 +194,7 @@ export default function Covid({ covid }) {
                                             virus penyakit, yang dihasilkan pada saat
                                             batuk, bersin, atau berbicara. Droplet dapat melewati sampai jarak tertentu
                                             (biasanya 1 meter).</p>
-                                        <p className="text-dark-secondary">Droplet bisa menempel di pakaian atau benda di
+                                        <p className="text-color-secondary">Droplet bisa menempel di pakaian atau benda di
                                             sekitar penderita pada saat batuk atau bersin. Namun, partikel droplet
                                             cukup besar sehingga tidak akan bertahan atau mengendap di udara dalam waktu
                                             yang lama. Oleh karena itu, orang yang
@@ -204,8 +204,8 @@ export default function Covid({ covid }) {
                                     </div>
                                     <div className="tab-pane fade show" id="v-pills-gejala" role="tabpanel"
                                         aria-labelledby="v-pills-gejala-tab">
-                                        <h6 className="mb-3">Gejala Covid-19</h6>
-                                        <p className="text-dark-secondary">Gejala umum berupa demam ≥380C, batuk kering, dan
+                                        <h6 className="mb-3 text-color-primary">Gejala Covid-19</h6>
+                                        <p className="text-color-secondary">Gejala umum berupa demam ≥380C, batuk kering, dan
                                             sesak napas. Jika ada orang yang dalam 14 hari sebelum muncul gejala
                                             tersebut pernah melakukan perjalanan ke negara terjangkit, atau pernah
                                             merawat/kontak erat dengan penderita COVID-19,
@@ -214,8 +214,8 @@ export default function Covid({ covid }) {
                                     </div>
                                     <div className="tab-pane fade show" id="v-pills-mencegah" role="tabpanel"
                                         aria-labelledby="v-pills-mencegah-tab">
-                                        <h5 className="mb-3">Pencegahan Penyebaran Covid-19</h5>
-                                        <ul className="list-unstyled">
+                                        <h5 className="mb-3 text-color-primary">Pencegahan Penyebaran Covid-19</h5>
+                                        <ul className="list-unstyled text-color-secondary">
                                             <li className="mb-2">1. Cuci Tangan Sesering Mungkin</li>
                                             <li className="mb-2">2. Jaga Jarak</li>
                                             <li className="mb-2">3. Hindari menyentuh mata, hidung, dan mulut</li>

@@ -45,15 +45,15 @@ export default function Struktur({ posts }) {
                 <div className="container my-5">
                     <div className="row g-4 my-2">
                         <div className="col-sm-3">
-                            <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
+                            <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
                                 <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded"/>
                             </div>
                         </div>
                         <div className="col-sm-9">
-                            <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                <h4>Kepala Desa</h4>
+                            <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
+                                <h4 className="text-color-primary">Kepala Desa</h4>
                                 <div className="table-responsive mt-3">
-                                    <table className="table table-bordered table-hover">
+                                    <table className="table text-color-secondary table-bordered table-bordered-primary">
                                         <tbody>
                                             <tr>
                                                 <td>Jabatan</td>
@@ -73,15 +73,15 @@ export default function Struktur({ posts }) {
                         <div className="col-lg-6">
                             <div className="row">
                                 <div className="col-sm-3">
-                                    <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
+                                    <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
                                         <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
-                                    <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                        <h4>Sekretaris Desa</h4>
+                                    <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
+                                        <h4 className="text-color-primary">Sekretaris Desa</h4>
                                         <div className="table-responsive mt-3">
-                                            <table className="table table-bordered table-hover">
+                                            <table className="table text-color-secondary table-bordered table-bordered-primary">
                                                 <tbody>
                                                     <tr>
                                                         <td>Jabatan</td>
@@ -101,15 +101,15 @@ export default function Struktur({ posts }) {
                         <div className="col-lg-6">
                             <div className="row">
                                 <div className="col-sm-3">
-                                    <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
+                                    <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
                                         <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
-                                    <div className="card bg-white shadow-sm rounded border-0 px-3 py-3">
-                                        <h4>Bendahara Desa</h4>
+                                    <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
+                                        <h4 className="text-color-primary">Bendahara Desa</h4>
                                         <div className="table-responsive mt-3">
-                                            <table className="table table-bordered table-hover">
+                                            <table className="table text-color-secondary table-bordered table-bordered-primary">
                                                 <tbody>
                                                     <tr>
                                                         <td>Jabatan</td>

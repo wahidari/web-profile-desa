@@ -40,7 +40,7 @@ export default function Kategori({ posts }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName={categoryName} currentPage={categoryName} />
                 </div>
 

@@ -47,16 +47,16 @@ export default function InformasiPublik({ covid }) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Administrasi" currentPage="Administrasi" />
                 </div>
 
                 <div className="container my-5">
-                    <div className=" card border-0 shadow-custom px-3 pt-3">
-                        <h4>Wilayah Administrasi</h4>
+                    <div className="card bg-card-primary border-0 shadow-custom px-3 pt-3">
+                        <h4 className="text-color-primary">Wilayah Administrasi</h4>
                         <hr className="mb-4" />
-                        <h5>Topografi Desa</h5>
-                        <p>
+                        <h5 className="text-color-primary">Topografi Desa</h5>
+                        <p className="text-color-secondary">
                             Luas wilayah di Desa {namaDesa} ± 965 Ha, dengan topografi
                             bergelombang, peruntukan lahan sebagian besar untuk lahan perkebunan
                             Masyarakat, kemudian untuk pemukiman, sarana umum, pemerintahan dan
@@ -65,9 +65,9 @@ export default function InformasiPublik({ covid }) {
                             tersebut mempunyai pengaruh langsung terhadap pala tanam terhadap lahan
                             pertanian yang ada di Desa {namaDesa} Kecamatan {namaKecamatan}.
                         </p>
-                        <h5 className="mt-3">Detail Wilayah</h5>
+                        <h5 className="mt-3 text-color-primary">Detail Wilayah</h5>
                         <div className="table-responsive col-lg-5">
-                            <table className="table table-hover table-borderless">
+                            <table className="table text-color-secondary table-borderless">
                                 <tbody>
                                     <tr>
                                         <td>Luas Wilayah</td>

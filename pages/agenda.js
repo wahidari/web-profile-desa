@@ -38,7 +38,7 @@ export default function Agenda({agendas}) {
             <NavBarTop />
 
             <main>
-                <div className="bg-light">
+                <div className="bg-color-primary">
                     <Breadcrumb pageName="Agenda" currentPage="Agenda" />
                 </div>
 
