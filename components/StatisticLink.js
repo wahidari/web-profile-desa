@@ -12,7 +12,7 @@ export default function StatisticLink() {
                 }
 
                 .statistic .stretched-link {
-                    color: #212529;
+                    color: var(--text-color-primary);
                     text-decoration: none;
                     transition: all 1s;
                 }
@@ -41,11 +41,11 @@ export default function StatisticLink() {
             `}</style>
 
             <section className="statistic my-5 py-5 text-center container">
-                <h3>Statistik Desa</h3>
-                <p className="text-dark-secondary text-subtitle">Berikut Adalah Statistik Demografi Desa Kami</p>
+                <h3 className="text-color-primary">Statistik Desa</h3>
+                <p className="text-color-secondary text-subtitle">Berikut Adalah Statistik Demografi Desa Kami</p>
                 <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     <div className="col-6 col-md-3">
-                        <div className="card h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="500">
+                        <div className="card bg-card-primary h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="500">
                             <div className="masthead-followup-icon mb-2 text-white bg-danger mx-auto mt-4">
                                 <i className="icon">
                                     <FaBriefcase />
@@ -61,7 +61,7 @@ export default function StatisticLink() {
                         </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <div className="card h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="1000">
+                        <div className="card bg-card-primary h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="1000">
                             <div className="masthead-followup-icon mb-2 text-white bg-info mx-auto mt-4">
                                 <i className="icon">
                                     <FaGraduationCap />
@@ -77,7 +77,7 @@ export default function StatisticLink() {
                         </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <div className="card h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="1500">
+                        <div className="card bg-card-primary h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="1500">
                             <div className="masthead-followup-icon mb-2 text-white bg-warning mx-auto mt-4">
                                 <i className="icon">
                                     <FaMoon />
@@ -93,7 +93,7 @@ export default function StatisticLink() {
                         </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <div className="card h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="2000">
+                        <div className="card bg-card-primary h-100 border-0 shadow-custom" data-aos="fade-up" data-aos-duration="2000">
                             <div className="masthead-followup-icon mb-2 text-white bg-success mx-auto mt-4">
                                 <i className="icon">
                                     <FaPeopleArrows />

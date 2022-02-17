@@ -31,9 +31,12 @@ export default function Footer() {
                 .text-15 {
                     font-size: 16px;
                 }
+                .bg-dark {
+                    background-color: #171717 !important;
+                }
             `}</style>
 
-            <footer className="bg-dark text-white">
+            <footer className="bg-dark text-white border-top-primary">
                 <div className="container pt-5">
                     <div className="row">
                         <div className="col-md-8 col-lg-4 my-2 my-md-0">

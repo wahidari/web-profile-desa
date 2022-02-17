@@ -17,7 +17,7 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                     transition: color 0.7s ease-out;
                 }
                 .stretched-link {
-                    color: #212529;
+                    color: var(--text-color-primary);
                     text-decoration: none;
                     font-weight: 500;
                 }
@@ -26,10 +26,8 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                 }
                 .blog-meta {
                     font-size: 14px;
-                    color: #495057;
                 }
                 .card-text {
-                    color: #495057;
                     font-size: 15px;
                 }
                 .mt-n1 {
@@ -37,7 +35,7 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                 }
             `}</style>
 
-            <article className="card card-link shadow-card border-0 h-100">
+            <article className="card bg-card-primary card-link shadow-card border-0 h-100">
                 <Image
                     alt="Post Image"
                     src={image}
@@ -51,7 +49,7 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                     <Link href={`/berita/${slug}`}>
                         <a className="stretched-link"><h5 className="card-title">{title}</h5></a>
                     </Link>
-                    <div className="d-flex blog-meta py-2">
+                    <div className="d-flex blog-meta text-color-muted py-2">
                         <div className="me-3 d-flex">
                             <i className="me-2 mt-n1"><FaUser /></i>
                             {author}
@@ -61,7 +59,7 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                             {date}
                         </div>
                     </div>
-                    <p className="card-text mt-2">{excerpt}</p>
+                    <p className="card-text text-color-tertiary mt-2">{excerpt}</p>
                 </div>
             </article>
         </>

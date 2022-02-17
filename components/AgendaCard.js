@@ -17,20 +17,16 @@ export default function AgendaCard({ id, slug, image, title, location, date, tim
                     transition: color 0.7s ease-out;
                 }
                 .stretched-link {
-                    color: #212529;
+                    color: var(--text-color-primary);
                     text-decoration: none;
                     font-weight: 500;
                 }
                 .shadow-card {
                     box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
                 }
-                .card-text {
-                    color: #495057;
-                    font-size: 15px;
-                }
             `}</style>
 
-            <article className="card h-100 card-link shadow-card agenda border-0">
+            <article className="card bg-card-primary h-100 card-link shadow-card agenda border-0">
                 <div className="row g-0">
                     <div className="col-sm-4 d-flex align-items-center">
                         <Image
@@ -48,8 +44,8 @@ export default function AgendaCard({ id, slug, image, title, location, date, tim
                                 <a className="stretched-link"><h5 className="card-title mb-3">{title}</h5></a>
                             </Link>
                             <div className="d-flex mb-3">
-                                <FaRegCalendarAlt />
-                                <small className="text-muted ms-2">{date}</small>
+                                <FaRegCalendarAlt className="text-color-muted"/>
+                                <small className="text-color-muted ms-2">{date}</small>
                             </div>
                         </div>
                     </div>

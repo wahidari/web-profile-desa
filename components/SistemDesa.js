@@ -53,12 +53,12 @@ export default function SistemDesa() {
 
             <section>
                 <div className="container-fluid py-5 my-5">
-                    <h2 className="text-center">Aplikasi Desa</h2>
-                    <p className="text-center text-dark-secondary text-subtitle">Berikut Adalah Beberapa Aplikasi di Desa Kami</p>
+                    <h2 className="text-center text-color-primary">Aplikasi Desa</h2>
+                    <p className="text-center text-color-secondary text-subtitle">Berikut Adalah Beberapa Aplikasi di Desa Kami</p>
                     <div className="container mt-5">
                         <div className="row gx-3 gy-3">
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="500">
+                                <div className="card bg-card-primary border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="500">
                                     <Link href="/lapak">
                                         <a className="stretched-link" aria-label="Bumdes"></a>
                                     </Link>
@@ -71,15 +71,15 @@ export default function SistemDesa() {
                                                 </path>
                                             </svg></div>
                                             <div className="d-block">
-                                                <h5 className="mb-0">BUMDES</h5>
-                                                <label className="mb-0 text-dark-secondary">Usaha Desa</label>
+                                                <h5 className="mb-0 text-color-primary">BUMDES</h5>
+                                                <label className="mb-0 text-color-muted">Usaha Desa</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1000">
+                                <div className="card bg-card-primary border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1000">
                                     <a href="https://web-anjungan-desa.vercel.app" className="stretched-link" aria-label="Pengaduan" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
@@ -90,15 +90,15 @@ export default function SistemDesa() {
                                                     clipRule="evenodd"></path>
                                             </svg></div>
                                             <div className="d-block">
-                                                <h4 className="mb-0">E-ADUAN</h4>
-                                                <label className="mb-0 text-dark-secondary">Pengaduan Online</label>
+                                                <h4 className="mb-0 text-color-primary">E-ADUAN</h4>
+                                                <label className="mb-0 text-color-muted">Pengaduan Online</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1500">
+                                <div className="card bg-card-primary border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="1500">
                                     <a href="https://web-anjungan-desa.vercel.app" className="stretched-link" aria-label="Surat" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center align-center">
@@ -112,15 +112,15 @@ export default function SistemDesa() {
                                                 </svg>
                                             </div>
                                             <div className="d-block">
-                                                <h4 className="mb-0">E-LETTER</h4>
-                                                <label className="mb-0 text-dark-secondary">Pengajuan Surat</label>
+                                                <h4 className="mb-0 text-color-primary">E-LETTER</h4>
+                                                <label className="mb-0 text-color-muted">Pengajuan Surat</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-6 col-lg-3">
-                                <div className="card border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="2000">
+                                <div className="card bg-card-primary border-0 shadow-sm card-link h-100" data-aos="fade-up" data-aos-duration="2000">
                                     <a href="https://web-anjungan-desa.vercel.app" className="stretched-link" aria-label="Kesehatan" rel="noreferrer" target="_blank"></a>
                                     <div className="card-body">
                                         <div className="d-flex align-items-center">
@@ -133,8 +133,8 @@ export default function SistemDesa() {
                                                 </svg>
                                             </div>
                                             <div className="d-block">
-                                                <h4 className="mb-0">E-HEALTH</h4>
-                                                <label className="mb-0 text-dark-secondary">Info Kesehatan</label>
+                                                <h4 className="mb-0 text-color-primary">E-HEALTH</h4>
+                                                <label className="mb-0 text-color-muted">Info Kesehatan</label>
                                             </div>
                                         </div>
                                     </div>
