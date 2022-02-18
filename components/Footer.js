@@ -23,7 +23,7 @@ export default function Footer() {
                     transition: all 1s ease;
                 }
                 .text-white-80 {
-                    color: rgb(206, 205, 205);
+                    color: #d4d4d4;
                 }
                 .border-top-dark {
                     border-top: 1px solid #4141417c !important;

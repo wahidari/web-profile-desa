@@ -25,7 +25,7 @@ export default function Breadcrumb({pageName, currentPage}) {
                                 <a>Home</a>
                             </Link>
                         </li>
-                        <li className="breadcrumb-item active" aria-current="page">{currentPage}</li>
+                        <li className="breadcrumb-item active text-color-tertiary" aria-current="page">{currentPage}</li>
                     </ol>
                 </nav>
             </div>

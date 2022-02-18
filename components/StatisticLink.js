@@ -18,7 +18,7 @@ export default function StatisticLink() {
                 }
                 .statistic .stretched-link:hover {
                     color: #0d6efd;
-                    transition: transform 1s ease-in-out;
+                    transition: all 0.6s ease-in-out;
                 }
                 .icon {
                     font-size: 32px;

@@ -6,48 +6,48 @@ export default function SistemDesa() {
         <>
             <style jsx>{`
                 .icon-shape {
-                width: 4rem;
-                height: 4rem;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
+                    width: 4rem;
+                    height: 4rem;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .icon-shape .icon-sm {
-                width: 3.275rem;
-                height: 3.275rem;
+                    width: 3.275rem;
+                    height: 3.275rem;
                 }
 
                 .icon-shape-danger {
-                color: #e11d48;
-                background-color: rgba(225, 29, 72, 0.3);
+                    color: #e11d48;
+                    background-color: rgba(225, 29, 72, 0.3);
                 }
 
                 .icon-shape-purple {
-                color: #7c3aed;
-                background-color: rgba(124, 58, 237, 0.3);
+                    color: #7c3aed;
+                    background-color: rgba(124, 58, 237, 0.3);
                 }
 
                 .icon-shape-success {
-                color: #10b981;
-                background-color: rgba(16, 185, 129, 0.3);
+                    color: #10b981;
+                    background-color: rgba(16, 185, 129, 0.3);
                 }
 
                 .icon-shape-warning {
-                color: #fba918;
-                background-color: rgba(251, 169, 24, 0.3);
+                    color: #fba918;
+                    background-color: rgba(251, 169, 24, 0.3);
                 }
                 .card-link:hover {
-                transition: all 1s ease;
+                    transition: all 1s ease;
                 }
                 .card-link:hover {
-                transition: box-shadow 0.5s ease; /* Animation */
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+                    transition: box-shadow 0.5s ease; /* Animation */
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
                 }
 
                 .card-link:hover .card-title {
-                color: #0d6efd;
-                transition: color 0.7s ease-out;
+                    color: #0d6efd;
+                    transition: color 0.7s ease-out;
                 }
             `}</style>
 
@@ -71,8 +71,8 @@ export default function SistemDesa() {
                                                 </path>
                                             </svg></div>
                                             <div className="d-block">
-                                                <h5 className="mb-0 text-color-primary">BUMDES</h5>
-                                                <label className="mb-0 text-color-muted">Usaha Desa</label>
+                                                <h4 className="mb-0 text-color-primary">BUMDES</h4>
+                                                <label className="mb-0 text-color-tertiary">Usaha Desa</label>
                                             </div>
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ export default function SistemDesa() {
                                             </svg></div>
                                             <div className="d-block">
                                                 <h4 className="mb-0 text-color-primary">E-ADUAN</h4>
-                                                <label className="mb-0 text-color-muted">Pengaduan Online</label>
+                                                <label className="mb-0 text-color-tertiary">Pengaduan Online</label>
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@ export default function SistemDesa() {
                                             </div>
                                             <div className="d-block">
                                                 <h4 className="mb-0 text-color-primary">E-LETTER</h4>
-                                                <label className="mb-0 text-color-muted">Pengajuan Surat</label>
+                                                <label className="mb-0 text-color-tertiary">Pengajuan Surat</label>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ export default function SistemDesa() {
                                             </div>
                                             <div className="d-block">
                                                 <h4 className="mb-0 text-color-primary">E-HEALTH</h4>
-                                                <label className="mb-0 text-color-muted">Info Kesehatan</label>
+                                                <label className="mb-0 text-color-tertiary">Info Kesehatan</label>
                                             </div>
                                         </div>
                                     </div>

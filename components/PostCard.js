@@ -59,7 +59,7 @@ export default function PostCard({ id, image, title, slug, author, date, excerpt
                             {date}
                         </div>
                     </div>
-                    <p className="card-text text-color-tertiary mt-2">{excerpt}</p>
+                    <p className="card-text text-color-secondary mt-2">{excerpt}</p>
                 </div>
             </article>
         </>

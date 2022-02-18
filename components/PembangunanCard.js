@@ -19,7 +19,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                 <div className="card bg-card-primary shadow-custom border-0 h-100">
                     <div className="card-body">
                         <h6 className="mb-3 text-color-primary text-18">Pembangunan Jembatan Penghubung Persawahan</h6>
-                        <div className="d-flex text-color-muted">
+                        <div className="d-flex text-color-tertiary">
                             <p className="mb-0 me-4">
                                 <i className="me-2"><FaMapMarkerAlt /></i>
                                 RT 01
@@ -39,7 +39,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                 <div className="card bg-card-primary shadow-custom border-0 h-100">
                     <div className="card-body">
                         <h6 className="mb-3 text-color-primary text-18">Pembangunan MCK dan Tempat Wudhu Masjid</h6>
-                        <div className="d-flex text-color-muted">
+                        <div className="d-flex text-color-tertiary">
                             <p className="mb-0 me-4">
                                 <i className="me-2"><FaMapMarkerAlt /></i>
                                 RT 02
@@ -59,7 +59,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                 <div className="card bg-card-primary shadow-custom border-0 h-100">
                     <div className="card-body">
                         <h6 className="mb-3 text-color-primary text-18">Pembangunan Jalan Usaha Pertanian</h6>
-                        <div className="d-flex text-color-muted">
+                        <div className="d-flex text-color-tertiary">
                             <p className="mb-0 me-4">
                                 <i className="me-2"><FaMapMarkerAlt /></i>
                                 RT 03
@@ -79,7 +79,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                 <div className="card bg-card-primary shadow-custom border-0 h-100">
                     <div className="card-body">
                         <h6 className="mb-3 text-color-primary text-18">Pembangunan Gorong-Gorong Jalan</h6>
-                        <div className="d-flex text-color-muted">
+                        <div className="d-flex text-color-tertiary">
                             <p className="mb-0 me-4">
                                 <i className="me-2"><FaMapMarkerAlt /></i>
                                 RT 04

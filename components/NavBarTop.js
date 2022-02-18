@@ -60,7 +60,7 @@ export default function NavBarTop() {
                         font-weight: 600;
                     }
                     .icon-toggle {
-                        color: var(--text-color-muted) !important;
+                        color: var(--text-color-tertiary) !important;
                     }
                     .navbar-toggler {
                         border-color: #ddddddbd;
@@ -72,12 +72,12 @@ export default function NavBarTop() {
                     <div className="row">
                         <div className="col-lg-6 col-sm-8">
                             <div className="">
-                                <a href="https://wa.me/68123456789" rel="noreferrer" target="_blank" className="text-decoration-none text-14 text-color-muted">
+                                <a href="https://wa.me/68123456789" rel="noreferrer" target="_blank" className="text-decoration-none text-14 text-color-tertiary">
                                     <i className="me-2"><FaPhoneAlt /></i>
                                     68123456789
                                 </a>
                                 <span className="mx-2 text-black-50">|</span>
-                                <a href="mailto:admin@gmail.com" rel="noreferrer" target="_blank" className="text-decoration-none text-14 text-color-muted">
+                                <a href="mailto:admin@gmail.com" rel="noreferrer" target="_blank" className="text-decoration-none text-14 text-color-tertiary">
                                     <i className="me-2"><FaRegEnvelope /></i>
                                     admin@gmail.com
                                 </a>
@@ -85,16 +85,16 @@ export default function NavBarTop() {
                         </div>
                         <div className="col-lg-6 col-sm-4">
                             <div className="float-end">
-                                <a href="https://web.facebook.com/" className="mx-2 text-color-muted" aria-label="Facebook" rel="noreferrer" target="_blank">
+                                <a href="https://web.facebook.com/" className="mx-2 text-color-tertiary" aria-label="Facebook" rel="noreferrer" target="_blank">
                                     <i className=""><FaFacebook /></i>
                                 </a>
-                                <a href="https://twitter.com/" className="mx-2 text-color-muted" aria-label="Twitter" rel="noreferrer" target="_blank">
+                                <a href="https://twitter.com/" className="mx-2 text-color-tertiary" aria-label="Twitter" rel="noreferrer" target="_blank">
                                     <i className=""><FaTwitter /></i>
                                 </a>
-                                <a href="https://www.youtube.com/" className="mx-2 text-color-muted" aria-label="Youtube" rel="noreferrer" target="_blank">
+                                <a href="https://www.youtube.com/" className="mx-2 text-color-tertiary" aria-label="Youtube" rel="noreferrer" target="_blank">
                                     <i className=""><FaYoutube /></i>
                                 </a>
-                                <a href="https://www.instagram.com/" className="mx-2 text-color-muted" aria-label="Instagram" rel="noreferrer" target="_blank">
+                                <a href="https://www.instagram.com/" className="mx-2 text-color-tertiary" aria-label="Instagram" rel="noreferrer" target="_blank">
                                     <i className=""><FaInstagram /></i>
                                 </a>
                             </div>
@@ -115,7 +115,7 @@ export default function NavBarTop() {
                             />{" "}
                             <div>
                                 <h5 className="ms-1 my-0 fw-600 text-color-primary">Desa {namaDesa}</h5>
-                                <p className="ms-1 mb-0 text-15 text-color-muted">Kabupaten Bangkalan</p>
+                                <p className="ms-1 mb-0 text-15 text-color-tertiary">Kabupaten Bangkalan</p>
                             </div>
                         </a>
                     </Link>
@@ -127,123 +127,123 @@ export default function NavBarTop() {
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item mt-2 mt-xl-0 ms-lg-1">
                                 <ActiveLink activeClassName="active" href="/">
-                                    <a className="nav-link text-color-muted">Home</a>
+                                    <a className="nav-link text-color-tertiary">Home</a>
                                 </ActiveLink>
                             </li>
                             {/* <hr className="d-lg-none my-1"></hr> */}
                             <li className="nav-item dropdown ms-lg-1">
-                                <a className="nav-link dropdown-toggle text-color-muted" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle text-color-tertiary" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Profil
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="profilDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/sejarah">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Sejarah</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Sejarah</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/visimisi">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Visi Misi</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Visi Misi</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/struktur">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Struktur Organisasi</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Struktur Organisasi</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
-                                <a className="nav-link dropdown-toggle text-color-muted" href="#" id="informasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle text-color-tertiary" href="#" id="informasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Informasi
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="informasiDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/berita">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Berita</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Berita</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/agenda">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Agenda</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Agenda</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/produkhukum">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Produk Hukum</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Produk Hukum</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/informasipublik">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Informasi Publik</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Informasi Publik</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
-                                <a className="nav-link dropdown-toggle text-color-muted" href="#" id="chartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle text-color-tertiary" href="#" id="chartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Demografis
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="chartDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/administrasi">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Administrasi</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Administrasi</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/penduduk">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Penduduk</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Penduduk</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/wilayah">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Wilayah</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Wilayah</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
-                                <a className="nav-link dropdown-toggle text-color-muted" href="#" id="galeriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle text-color-tertiary" href="#" id="galeriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Media
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="galeriDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/foto">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Galeri Foto</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Galeri Foto</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/video">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Galeri Video</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Galeri Video</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown ms-lg-1">
-                                <a className="nav-link dropdown-toggle text-color-muted" href="#" id="publikasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle text-color-tertiary" href="#" id="publikasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Publikasi
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="publikasiDropdown">
                                     <li>
                                         <ActiveLink activeClassName="active" href="/pembangunan">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Pembangunan Desa</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Pembangunan Desa</a>
                                         </ActiveLink>
                                     </li>
                                     <li>
                                         <ActiveLink activeClassName="active" href="/danadesa">
-                                            <a className="nav-link text-color-muted ms-3 ms-md-2">Dana Desa</a>
+                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Dana Desa</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item ms-lg-1">
                                 <ActiveLink activeClassName="active" href="/lapak">
-                                    <a className="nav-link text-color-muted">Lapak</a>
+                                    <a className="nav-link text-color-tertiary">Lapak</a>
                                 </ActiveLink>
                             </li>
                             <li className="nav-item ms-lg-1">
                                 <ActiveLink activeClassName="active" href="/covid">
-                                    <a className="nav-link text-color-muted">Covid</a>
+                                    <a className="nav-link text-color-tertiary">Covid</a>
                                 </ActiveLink>
                             </li>
                             <li className="nav-item ms-lg-1">
