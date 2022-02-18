@@ -96,7 +96,7 @@ export default function Wilayah({ area }) {
                                             </tr>
                                         )} 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalRT}</td>
                                             <td className="fw-600">{totalKK}</td>
                                             <td className="fw-600">{totalMale}</td>

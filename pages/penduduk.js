@@ -112,7 +112,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )} 
                                         
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataGender}</td>
                                         </tr>
                                     </tbody>
@@ -154,7 +154,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )}
 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataEducation}</td>
                                         </tr>
                                     </tbody>
@@ -196,7 +196,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )}
 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataReligion}</td>
                                         </tr>
                                     </tbody>
@@ -238,7 +238,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )}
 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataPekerjaan}</td>
                                         </tr>
                                     </tbody>
@@ -281,7 +281,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )}
 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataUsia}</td>
                                         </tr>
                                     </tbody>
@@ -323,7 +323,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         )}
 
                                         <tr>
-                                            <td colSpan="2" className="text-center fw-600">Jumlah</td>
+                                            <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataStatus}</td>
                                         </tr>
                                     </tbody>

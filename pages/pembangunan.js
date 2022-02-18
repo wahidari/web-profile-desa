@@ -129,7 +129,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
                                     <h5 className="card-title text-color-primary">Pembangunan Jembatan Penghubung Persawahan</h5>
-                                    <p className="card-text text-color-secondary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p className="card-text text-color-tertiary">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div className="d-flex text-color-secondary">
                                         <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
@@ -189,7 +189,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
                                     <h5 className="card-title text-color-primary">Pembangunan Jembatan Penghubung Persawahan</h5>
-                                    <p className="card-text text-color-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p className="card-text text-color-tertiary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div className="d-flex text-color-secondary">
                                         <p className="fw-600 me-4">
                                             <i className="me-2"><HiOutlineLocationMarker /></i>
@@ -230,7 +230,7 @@ export default function Pembangunan({ covid }) {
                             <div className="col-md-7 col-lg-8">
                                 <div className="card-body">
                                     <h5 className="card-title text-color-primary">Pembangunan MCK dan Tempat Wudhu Masjid</h5>
-                                    <p className="card-text text-color-secondary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p className="card-text text-color-tertiary fs-15">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <table className="table table-borderless text-color-secondary fs-15 fw-500">
                                         <tbody>
                                             <tr>
