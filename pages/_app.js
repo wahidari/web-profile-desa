@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import '../styles/globals.css';
+import '../styles/darkmode.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Router from 'next/router';
 import NProgress from 'nprogress';
