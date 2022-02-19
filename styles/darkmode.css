@@ -22,10 +22,10 @@ body[data-theme="dark"] {
 	--text-color-muted: #999;
 
 	--bg-color-primary: #171717;
-	--bg-color-secondary: #18181b;
+	--bg-color-secondary: #181818;
 	--bg-color-tertiary: #252a37;
 
-	--bg-card-primary: rgb(27, 27, 27);
+	--bg-card-primary: #1b1b1b;
 
 	--border-color-primary: #444444;
 
