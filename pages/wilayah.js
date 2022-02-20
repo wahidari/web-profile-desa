@@ -8,6 +8,27 @@ import { Bar } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
 
 ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
+const optionsBarChart = {
+    plugins: {
+        legend: {
+            labels: {
+                color: "#888"
+            }
+        }
+    },
+    scales: {
+        x: {
+            ticks: {
+                color: "#888"
+            }
+        },
+        y: {
+            ticks: {
+                color: "#888"
+            }
+        }
+    }
+};
 
 const title = "Demografis Wilayah";
 
@@ -64,6 +85,7 @@ export default function Wilayah({ area }) {
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-6 mx-auto">
                                 <Bar
+                                    options={optionsBarChart}
                                     data={dataArea}
                                     width={400}
                                     height={250}
@@ -161,6 +183,13 @@ function populateData(param) {
                 data: total,
             },
         ],
+        options: {
+            legend: {
+                labels: {
+                    fontColor: 'white' //set your desired color
+                }
+            }
+        }
     };
     return (data);
 }

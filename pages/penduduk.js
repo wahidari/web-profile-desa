@@ -7,12 +7,36 @@ import { Chart as ChartJS, ArcElement, CategoryScale, LinearScale, BarElement, T
 import { Bar, Doughnut, Pie } from 'react-chartjs-2';
 import BackToTop from "../components/BackToTop";
 
-ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement );
+ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 const colors = ["#36b9cc", "#1cc88a", "#6f42c1", "#e74a3b", "#fd7e14", "#f6c23e"];
-const options = {
+const optionsBarChart = {
     plugins: {
         legend: {
             display: false
+        }
+    },
+    scales: {
+        x: {
+            ticks: {
+                color: "#888"
+            }
+        },
+        y: {
+            ticks: {
+                color: "#888"
+            }
+        }
+    }
+};
+const options = {
+    plugins: {
+        legend: {
+            labels: {
+                font: {
+                    // size: 13
+                },
+                color: "#888"
+            }
         }
     }
 };
@@ -27,7 +51,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
         namaDesa = localStorage.getItem("namaDesa");
         setNamaDesa(namaDesa);
     })
-    
+
     const dataGender = populateData(gender);
     const totalDataGender = getTotalData(gender);
 
@@ -45,7 +69,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
 
     const dataUsia = populateData(usia);
     const totalDataUsia = getTotalData(usia);
-    
+
     return (
         <>
             <style jsx>
@@ -87,6 +111,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
+                                    options={options}
                                     data={dataGender}
                                     width={400}
                                     height={250}
@@ -103,14 +128,14 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {gender.map(item => 
+                                        {gender.map(item =>
                                             <tr key={item.id}>
                                                 <td>{item.id}</td>
                                                 <td>{item.name}</td>
                                                 <td>{item.total}</td>
                                             </tr>
-                                        )} 
-                                        
+                                        )}
+
                                         <tr>
                                             <td colSpan="2" className="text-center fw-600">Jumlah Total</td>
                                             <td className="fw-600">{totalDataGender}</td>
@@ -129,6 +154,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
+                                    options={options}
                                     data={dataEducation}
                                     width={400}
                                     height={250}
@@ -171,6 +197,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
+                                    options={options}
                                     data={dataReligion}
                                     width={400}
                                     height={250}
@@ -213,6 +240,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
+                                    options={options}
                                     data={dataPekerjaan}
                                     width={400}
                                     height={250}
@@ -255,7 +283,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-6 mx-auto">
                                 <Bar
-                                    options={options}
+                                    options={optionsBarChart}
                                     data={dataUsia}
                                     width={400}
                                     height={250}
@@ -298,6 +326,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Pie
+                                    options={options}
                                     data={dataStatus}
                                     width={400}
                                     height={250}
@@ -336,7 +365,7 @@ export default function Penduduk({ gender, education, religion, pekerjaan, statu
             </main>
 
             <Footer />
-            
+
             <BackToTop />
         </>
     );
