@@ -13,6 +13,10 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
+    const savedTheme = window.localStorage.getItem("theme");
+    if(savedTheme == undefined) {
+      window.localStorage.setItem("theme", "light");
+    }
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle') : null
   }, []);
   
