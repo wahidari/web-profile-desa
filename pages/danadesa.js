@@ -11,6 +11,18 @@ ChartJS.register( ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarEl
 
 const title = "Dana Desa";
 const colors = ["#36b9cc", "#e74a3b", "#fd7e14", "#f6c23e"];
+const options = {
+    plugins: {
+        legend: {
+            labels: {
+                font: {
+                    // size: 13
+                },
+                color: "#888"
+            }
+        }
+    }
+};
 
 export default function DanaDesa({ danadesa }) {
 
@@ -76,6 +88,7 @@ export default function DanaDesa({ danadesa }) {
                             <h5 className="text-color-primary">Grafik</h5>
                             <div className="col-md-8 col-lg-5 mx-auto">
                                 <Doughnut
+                                    options={options}
                                     data={dataDanaDesa}
                                     width={400}
                                     height={250}
