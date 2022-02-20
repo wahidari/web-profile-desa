@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 const ToggleButton = styled.button`
 	box-sizing: border-box;
 	min-width: 0px;
-	--toggle-width: 48px;
-	--toggle-height: 24px;
+	--toggle-width: 44px;
+	--toggle-height: 22px;
 	--toggle-padding: 1px;
 	position: relative;
 	display: flex;
@@ -65,8 +65,8 @@ export default function ThemeToggle() {
 			onClick={() => setActiveTheme(inactiveTheme)}
 		>
 			<ToggleThumb activeTheme={activeTheme} />
-			<span aria-hidden={true}>☀️</span>
-			<span aria-hidden={true}>🌙</span>
+			<span aria-hidden={true} className="fs-14">☀️</span>
+			<span aria-hidden={true} className="fs-14">🌙</span>
 		</ToggleButton>
 	);
 };
