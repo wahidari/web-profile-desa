@@ -119,9 +119,12 @@ export default function NavBarTop() {
                             </div>
                         </a>
                     </Link>
+
+                    <a className="nav-link ms-auto order-0 order-xl-1" aria-current="page"><ThemeToggle /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="icon-toggle"><FaBars /></i>
                     </button>
+
                     <div className="collapse navbar-collapse" id="navbarToggler">
                         {/* <hr className="d-lg-none mt-2 mb-0"></hr> */}
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -246,9 +249,9 @@ export default function NavBarTop() {
                                     <a className="nav-link text-color-tertiary">Covid</a>
                                 </ActiveLink>
                             </li>
-                            <li className="nav-item ms-lg-1">
+                            {/* <li className="nav-item ms-lg-1">
                                 <a className="nav-link" aria-current="page"><ThemeToggle /></a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
