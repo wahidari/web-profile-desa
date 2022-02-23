@@ -21,7 +21,7 @@ export default function CarouselHome() {
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 99%;
+                    height: 98%;
                     background-color: rgba(0, 0, 0, 0.4);
                 }
                 .carousel-caption {
