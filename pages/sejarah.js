@@ -55,7 +55,7 @@ export default function Sejarah({ posts }) {
                             <h3 className="text-color-primary">Sejarah Singkat</h3>
                             <Image 
                             src={imgDesa} 
-                            alt="Desa" 
+                            alt="Foto Desa" 
                             className="img-fluid rounded my-3"/>
                             <h5 className="mt-4 text-color-primary">Uraian Singkat Profil Desa</h5>
                             <p className="text-color-secondary">Desa {namaDesa} merupakan Desa yang terletak di dataran rendah

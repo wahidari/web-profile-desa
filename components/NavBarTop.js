@@ -107,7 +107,7 @@ export default function NavBarTop() {
                     <Link href="/">
                         <a className="navbar-brand d-flex align-items-center">
                             <Image
-                                alt="logo"
+                                alt="logo desa"
                                 src={imgLogo}
                                 height="50"
                                 width="50"
@@ -121,7 +121,7 @@ export default function NavBarTop() {
                     </Link>
 
                     <a className="nav-link ms-auto order-0 order-xl-1" aria-current="page"><ThemeToggle /></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="icon-toggle"><FaBars /></i>
                     </button>
 

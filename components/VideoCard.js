@@ -28,7 +28,7 @@ export default function VideoCard({ title, src }) {
 
             <div className="embed-responsive">
                 <iframe src={src} className="rounded"
-                    title={title} frameBorder="0"
+                    title={title} 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen>
                 </iframe>

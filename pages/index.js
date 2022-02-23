@@ -124,7 +124,7 @@ export default function Home({ posts, agendas, videos, photos }) {
                         <div className="row align-items-center justify-content-between">
                             <div className="col-md-5" data-aos="fade-up" data-aos-duration="750">
                                 <div className="d-flex justify-content-center">
-                                    <Image alt="Logo" src={imageLogo} height={250} width={250} />
+                                    <Image alt="Logo Desa" src={imageLogo} height={250} width={250} />
                                 </div>
                             </div>
                             <div className="col-md-7" data-aos="fade-up" data-aos-duration="1500">

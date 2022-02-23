@@ -46,7 +46,7 @@ export default function Struktur({ posts }) {
                     <div className="row g-4 my-2">
                         <div className="col-sm-3">
                             <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
-                                <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded"/>
+                                <Image alt="Foto Perangkat Desa" src={avatarImg} quality={90} className="img-fluid mx-auto rounded"/>
                             </div>
                         </div>
                         <div className="col-sm-9">
@@ -74,7 +74,7 @@ export default function Struktur({ posts }) {
                             <div className="row">
                                 <div className="col-sm-3">
                                     <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
-                                        <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
+                                        <Image alt="Foto Perangkat Desa" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
@@ -102,7 +102,7 @@ export default function Struktur({ posts }) {
                             <div className="row">
                                 <div className="col-sm-3">
                                     <div className="card bg-card-primary shadow-sm rounded border-0 px-3 py-3">
-                                        <Image alt="Image" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
+                                        <Image alt="Foto Perangkat Desa" src={avatarImg} quality={90} className="img-fluid mx-auto rounded" />
                                     </div>
                                 </div>
                                 <div className="col-sm-9">

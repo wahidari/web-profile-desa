@@ -120,7 +120,7 @@ export default function Pembangunan({ covid }) {
                                 <div className="image-container">
                                     <Image
                                         src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                        alt=""
+                                        alt="Foto Pembangunan"
                                         layout="fill"
                                         className="img-fluid rounded image">
                                     </Image>
@@ -167,7 +167,7 @@ export default function Pembangunan({ covid }) {
                                         <div className="image-container">
                                             <Image
                                                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                                alt=""
+                                                alt="Foto Pembangunan"
                                                 layout="fill"
                                                 className="img-fluid rounded image">
                                             </Image>
@@ -177,7 +177,7 @@ export default function Pembangunan({ covid }) {
                                         <div className="image-container">
                                             <Image
                                                 src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                                alt=""
+                                                alt="Foto Pembangunan"
                                                 layout="fill"
                                                 className="img-fluid rounded image">
                                             </Image>
@@ -221,7 +221,7 @@ export default function Pembangunan({ covid }) {
                                 <div className="image-container">
                                     <Image
                                         src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                                        alt=""
+                                        alt="Foto Pembangunan"
                                         layout="fill"
                                         className="img-fluid rounded image">
                                     </Image>
