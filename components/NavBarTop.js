@@ -120,7 +120,7 @@ export default function NavBarTop() {
                         </a>
                     </Link>
 
-                    <a className="nav-link ms-auto order-0 order-xl-1" aria-current="page"><ThemeToggle /></a>
+                    <div className="nav-link ms-auto order-0 order-xl-1" aria-current="page"><ThemeToggle /></div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="icon-toggle"><FaBars /></i>
                     </button>
