@@ -13,6 +13,10 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                 .text-18 {
                     font-size: 18px;
                 }
+                .progress-sm {
+                    height: 0.8rem;
+                    font-size: .7rem;
+                }
             `}</style>
 
             <div className="col-md-6 col-lg-4">
@@ -29,7 +33,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                                 Rp. 119.655,-
                             </p>
                         </div>
-                        <div className="progress">
+                        <div className="progress progress-sm">
                             <div className="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
                     </div>
@@ -49,7 +53,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                                 Rp. 219.655,-
                             </p>
                         </div>
-                        <div className="progress">
+                        <div className="progress progress-sm">
                             <div className="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                         </div>
                     </div>
@@ -69,7 +73,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                                 Rp. 319.655,-
                             </p>
                         </div>
-                        <div className="progress">
+                        <div className="progress progress-sm">
                             <div className="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                         </div>
                     </div>
@@ -89,7 +93,7 @@ export default function PembangunanCard({ id, image, title, slug, author, date, 
                                 Rp. 419.655,-
                             </p>
                         </div>
-                        <div className="progress">
+                        <div className="progress progress-sm">
                             <div className="progress-bar w-100 bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                     </div>
