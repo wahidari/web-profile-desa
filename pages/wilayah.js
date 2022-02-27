@@ -141,7 +141,11 @@ export default function Wilayah({ area }) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     const getDataArea = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/wilayah`);
     const area = await getDataArea.json();
     return {

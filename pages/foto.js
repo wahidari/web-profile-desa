@@ -115,7 +115,11 @@ export default function Foto({ photos }) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     const getDataPhotos = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/photo`);
     const photos = await getDataPhotos.json();
     // console.log(photos)

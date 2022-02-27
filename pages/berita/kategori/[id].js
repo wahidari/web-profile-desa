@@ -68,7 +68,11 @@ export default function Kategori({ posts }) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps({ params }){
+export async function getServerSideProps({ params, res }){
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     // For get post by category 
     const getPostByCategory = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post/category/${params.id}`);
     const posts = await getPostByCategory.json();
