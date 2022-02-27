@@ -68,7 +68,7 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
 
             <main>
                 <div className="container py-5">
-                    <div className="row g-5">
+                    <div className="row g-4 g-lg-5">
                         {/* Start Main Content */}
                         <div className="col-lg-8">
                             <div className="card bg-card-primary shadow-blog border-0">
@@ -163,7 +163,11 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
 };
 
 // This gets called on every request to this page
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params, res }) {
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=10, stale-while-revalidate=59'
+    )
     // console.log(params.slug)
     // Call external API from here directly using slug params in route url
     const getSingleAgenda = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/agenda/${params.slug}`);
