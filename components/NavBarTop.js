@@ -65,6 +65,10 @@ export default function NavBarTop() {
                     .navbar-toggler {
                         border-color: #ddddddbd;
                     }
+                    .nav-link-focus:focus {
+                        border-radius: 8px;
+                        background-color: var(--border-color-primary) !important;
+                    }
                 `}
             </style>
             <div className="d-none d-md-block bg-color-secondary py-2 top-of-navbar">
@@ -139,19 +143,19 @@ export default function NavBarTop() {
                                     Profil
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="profilDropdown">
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/sejarah">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Sejarah</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Sejarah</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/visimisi">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Visi Misi</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Visi Misi</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/struktur">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Struktur Organisasi</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Struktur Organisasi</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
@@ -161,24 +165,24 @@ export default function NavBarTop() {
                                     Informasi
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="informasiDropdown">
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/berita">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Berita</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Berita</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/agenda">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Agenda</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Agenda</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/produkhukum">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Produk Hukum</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Produk Hukum</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/informasipublik">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Informasi Publik</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Informasi Publik</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
@@ -188,19 +192,19 @@ export default function NavBarTop() {
                                     Demografis
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="chartDropdown">
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/administrasi">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Administrasi</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Administrasi</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/penduduk">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Penduduk</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Penduduk</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/wilayah">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Wilayah</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Wilayah</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
@@ -210,14 +214,14 @@ export default function NavBarTop() {
                                     Media
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="galeriDropdown">
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/foto">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Galeri Foto</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Galeri Foto</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/video">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Galeri Video</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Galeri Video</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
@@ -227,14 +231,14 @@ export default function NavBarTop() {
                                     Publikasi
                                 </a>
                                 <ul className="dropdown-menu bg-color-primary" aria-labelledby="publikasiDropdown">
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/pembangunan">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Pembangunan Desa</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Pembangunan Desa</a>
                                         </ActiveLink>
                                     </li>
-                                    <li>
+                                    <li className="me-2">
                                         <ActiveLink activeClassName="active" href="/danadesa">
-                                            <a className="nav-link text-color-tertiary ms-3 ms-md-2">Dana Desa</a>
+                                            <a className="nav-link nav-link-focus text-color-tertiary ms-2 ps-2 ms-md-2">Dana Desa</a>
                                         </ActiveLink>
                                     </li>
                                 </ul>
