@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,10 +8,12 @@ import Footer from "../../components/Footer";
 import PostList from "../../components/PostList";
 import AgendaList from "../../components/AgendaList";
 import BackToTop from "../../components/BackToTop";
-import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaUser, FaRegCalendarAlt, FaShareAlt } from "react-icons/fa";
+import { OverlayTrigger, Popover } from "react-bootstrap";
+import { FacebookIcon, TwitterIcon, WhatsappIcon, TelegramIcon, FacebookShareButton, TelegramShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 
 export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
-
+    const router = useRouter()
     let [namaDesa, setNamaDesa] = useState("Alang Alang");
 
     useEffect(() => {
@@ -22,6 +25,44 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
     const someRandomPosts = randomPosts.slice(0, 3);
     // Get 3 agenda
     const someRandomAgendas = randomAgendas.slice(0, 2);
+
+    const popover = (
+        <Popover id="popover-basic" className="bg-card-primary border-color-primary">
+            <Popover.Body>
+                <FacebookShareButton
+                    url={`${process.env.NEXT_PUBLIC_API_URL}${router.asPath}`}
+                    quote={agenda.title}
+                    description={"Bagikan ke Facebook"}
+                    className="me-2"
+                >
+                    <FacebookIcon size={32} round />
+                </FacebookShareButton>
+                <TwitterShareButton
+                    url={`${process.env.NEXT_PUBLIC_API_URL}${router.asPath}`}
+                    quote={agenda.title}
+                    description={"Bagikan ke Twitter"}
+                    className="me-2"
+                >
+                    <TwitterIcon size={32} round />
+                </TwitterShareButton>
+                <WhatsappShareButton
+                    url={`${process.env.NEXT_PUBLIC_API_URL}${router.asPath}`}
+                    quote={agenda.title}
+                    description={"Bagikan ke Whatsapp"}
+                    className="me-2"
+                >
+                    <WhatsappIcon size={32} round />
+                </WhatsappShareButton>
+                <TelegramShareButton
+                    url={`${process.env.NEXT_PUBLIC_API_URL}${router.asPath}`}
+                    quote={agenda.title}
+                    description={"Bagikan ke Telegram"}
+                >
+                    <TelegramIcon size={32} round />
+                </TelegramShareButton>
+            </Popover.Body>
+        </Popover>
+    );
 
     return (
         <>
@@ -89,6 +130,11 @@ export default function Agendaetail({ agenda, randomPosts, randomAgendas}) {
                                         </div>
                                     </div>
                                     <p className="card-text mt-2 text-color-secondary">{agenda.body}</p>
+                                    <div className="d-flex justify-content-end mt-4 mb-2">
+                                        <OverlayTrigger trigger="click" placement="left" overlay={popover}>
+                                            <button className="btn btn-outline-primary btn-sm"><FaShareAlt className="me-2" />Bagikan</button>
+                                        </OverlayTrigger>
+                                    </div>
                                 </div>
                             </div>
                         </div>

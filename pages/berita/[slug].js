@@ -10,16 +10,7 @@ import AgendaList from "../../components/AgendaList";
 import BackToTop from "../../components/BackToTop";
 import { FaUser, FaRegCalendarAlt, FaShareAlt } from "react-icons/fa";
 import { OverlayTrigger, Popover } from "react-bootstrap";
-import {
-    FacebookIcon,
-    TwitterIcon,
-    WhatsappIcon,
-    TelegramIcon,
-    FacebookShareButton,
-    TelegramShareButton,
-    TwitterShareButton,
-    WhatsappShareButton
-} from "react-share";
+import { FacebookIcon, TwitterIcon, WhatsappIcon, TelegramIcon, FacebookShareButton, TelegramShareButton, TwitterShareButton, WhatsappShareButton} from "react-share";
 
 export default function BlogDetail({ post, randomPosts, randomAgendas }) {
     const router = useRouter()
