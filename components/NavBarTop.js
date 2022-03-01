@@ -67,7 +67,7 @@ export default function NavBarTop() {
                     }
                     .nav-link-focus:focus {
                         border-radius: 8px;
-                        background-color: var(--border-color-primary) !important;
+                        background-color: var(--focus-color-primary) !important;
                     }
                 `}
             </style>

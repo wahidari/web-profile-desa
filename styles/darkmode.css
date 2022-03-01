@@ -12,6 +12,8 @@ body[data-theme="light"] {
 
 	--border-color-primary: #e6e6e6;
 
+	--focus-color-primary: #eff0f3;
+
 	--bg-color-toggle: #1e90ff;
 }
 
@@ -28,6 +30,8 @@ body[data-theme="dark"] {
 	--bg-card-primary: #1b1b1b;
 
 	--border-color-primary: #444444;
+
+	--focus-color-primary: #262626;
 
 	--bg-color-toggle: #404040;
 }
