@@ -112,7 +112,8 @@ a {
 	border-radius: 4px;
 }
 
-.swiper-pembangunan .swiper-button-next::after, .swiper-pembangunan .swiper-button-prev::after {
+.swiper-pembangunan .swiper-button-next::after,
+.swiper-pembangunan .swiper-button-prev::after {
 	font-size: 14px;
 	font-weight: 600;
 	background-color: #00000063;
@@ -121,7 +122,8 @@ a {
 	color: #fff;
 }
 
-.swiper-pembangunan .swiper-button-next:hover::after, .swiper-pembangunan .swiper-button-prev:hover::after {
+.swiper-pembangunan .swiper-button-next:hover::after,
+.swiper-pembangunan .swiper-button-prev:hover::after {
 	background-color: #000000b6 !important;
 	transition: background-color 0.2s ease-in;
 }
@@ -141,4 +143,8 @@ a {
 }
 .card-img-hover-zoom:hover img {
 	transform: scale(1.1) !important;
+}
+
+.popover-arrow {
+	display: none !important;
 }

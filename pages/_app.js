@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     if(savedTheme == undefined) {
       window.localStorage.setItem("theme", "light");
     }
-    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle') : null
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle.min.js') : null
   }, []);
   
   return <Component {...pageProps} />
