@@ -399,10 +399,10 @@ function populateData(param) {
     const labels = [];
     const totals = [];
     param.map(item =>
-        labels.push(item.name)
+        labels.push(item.label)
     );
     param.map(item =>
-        totals.push(item.total)
+        totals.push(item.jumlah)
     );
     const data = {
         labels: labels,
